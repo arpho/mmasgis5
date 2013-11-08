@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/World.png</file>
+        <file>resources/no_filter_not_hov.png</file>
+        <file>resources/no_filter.png</file>
+        <file>resources/filter_ok_not_hov.png</file>
+        <file>resources/filter_ok.png</file>
+        <file>resources/configure.png</file>
+        <file>resources/configure_not_hov.png</file>
+        <file>resources/back_not_hov.png</file>
+        <file>resources/down_arrow.png</file>
+        <file>resources/next_not_hov.png</file>
+        <file>resources/up_arrow.png</file>
+    </qresource>
+</RCC>

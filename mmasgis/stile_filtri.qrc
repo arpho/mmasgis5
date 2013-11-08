@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/no_filter.png</file>
+        <file>resources/ok_filter.png</file>
+        <file>resources/World.png</file>
+        <file>resources/down_arrow.png</file>
+        <file>resources/up_arrow.png</file>
+        <file>resources/refresh.png</file>
+        <file>resources/no_filter_not_hov.png</file>
+        <file>resources/ok_filter_not_hov.png</file>
+        <file>resources/refresh_filter.png</file>
+        <file>resources/checkbox_off_dis.png</file>
+        <file>resources/checkbox_off_en.png</file>
+        <file>resources/checkbox_off_enabled_hover.png</file>
+        <file>resources/checkbox_on_disabled.png</file>
+        <file>resources/checkbox_on_enabled.png</file>
+        <file>resources/checkbox_on_enabled_hover.png</file>
+        <file>resources/filter_ok_not_hov.png</file>
+        <file>resources/filter_ok.png</file>
+        <file>resources/back_not_hov.png</file>
+        <file>resources/next_not_hov.png</file>
+        <file>resources/open_folder.png</file>
+        <file>resources/open_folder_hov.png</file>
+        <file>resources/icon_save.png</file>
+        <file>resources/icon_save_not_hov.png</file>
+    </qresource>
+</RCC>

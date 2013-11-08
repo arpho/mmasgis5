@@ -1,0 +1,8 @@
+"""
+classe di costanti
+ esegue la conversione regione=> provincie
+tramite un dict
+@todo: capire da chi e' usata e cambiarlo con un sistema piu' dinamico e dattativo che funzioni in automatico anche con altre nazioni  
+"""
+regione={'PIEMONTE':[u'TORINO', u'VERCELLI', u'NOVARA', u'CUNEO', u'ASTI', u'ALESSANDRIA', u'BIELLA', u'VERBANO-CUSIO-OSSOLA'],'LOMBARDIA':[u'VARESE', u'COMO', u'SONDRIO', u'MILANO', u'BERGAMO', u'BRESCIA', u'PAVIA', u'CREMONA', u'MANTOVA', u'LECCO', u'LODI'],'VENETO':[u'VERONA', u'VICENZA', u'BELLUNO', u'TREVISO', u'VENEZIA', u'PADOVA', u'ROVIGO'],'FRIULI':['GORIZIA','PORDENONE','UDINE','TRIESTE'],'LIGURIA':[u'IMPERIA', u'SAVONA', u'GENOVA', u'SPEZIA'],'EMILIA':[u'ROMAGNA', u'ROMAGNA', u'ROMAGNA', u'ROMAGNA', u'ROMAGNA', u'ROMAGNA', u'ROMAGNA', u'ROMAGNA', u'ROMAGNA'],'TOSCANA':[u'MASSA', u'LUCCA', u'PISTOIA', u'FIRENZE', u'LIVORNO', u'PISA', u'AREZZO', u'SIENA', u'GROSSETO', u'PRATO'],'UMBRIA':[u'PERUGIA', u'TERNI'],'MARCHE':[u'PESARO', u'ANCONA', u'MACERATA', u'ASCOLI'],'LAZIO':[u'VITERBO', u'RIETI', u'ROMA', u'LATINA', u'FROSINONE'],'ABRUZZO':[u'AQUILA', u'TERAMO', u'PESCARA', u'CHIETI'],'MOLISE':[u'CAMPOBASSO', u'ISERNIA'],'CAMPANIA':[u'CASERTA', u'BENEVENTO', u'NAPOLI', u'AVELLINO', u'SALERNO'],'PUGLIA':[u'FOGGIA', u'BARI', u'TARANTO', u'BRINDISI', u'LECCE'],'BASILICATA':[u'POTENZA', u'MATERA'],'CALABRIA':[u'COSENZA', u'CATANZARO', u'REGGIO', u'CROTONE', u'VIBO'],'SICILIA':[u'TRAPANI', u'PALERMO', u'MESSINA', u'AGRIGENTO', u'CALTANISSETTA', u'ENNA', u'CATANIA', u'RAGUSA', u'SIRACUSA'],'SARDEGNA':[u'SASSARI', u'NUORO', u'CAGLIARI', u'ORISTANO']}
+#print regione['FRIULI']

@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowResults</class>
+ <widget class="QMainWindow" name="MainWindowResults">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Elenco Anagrafiche</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="risorse.qrc">
+    <normaloff>:/resources/icon_mmas.png</normaloff>:/resources/icon_mmas.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"> /* sets background color  */
+QWidget {
+background-color:rgba(255,255,255,0);
+}
+
+QWidget#centralWidget{
+	/*background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(217, 239, 255, 255), stop:0.5 rgba(239, 248, 255, 255), stop:1 rgba(210, 236, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(223, 246, 255, 255), stop:0.481132 rgba(243, 243, 243, 255), stop:0.995261 rgba(223, 246, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+}
+
+/* set scrollbar style */
+QScrollBar:horizontal {
+ border: 0px solid rgb(168, 172, 204);
+ border-radius:7px;
+	 background-color:rgba(255,255,255,0);
+     height: 13px;
+     margin: 0px 19px 0px 19px;
+ }
+
+ QScrollBar::handle:horizontal {	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.0272727 rgba(146, 179, 203, 255), stop:1 rgba(228, 240, 248, 255));
+     min-width: 11px;
+   border: 1px solid rgb(168, 172, 204);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:horizontal {
+  background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+  background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	 background-color:rgba(255,255,255,0);
+ }
+
+  QScrollBar:left-arrow:horizontal{
+	image: url(:/resources/back_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+   QScrollBar:left-arrow:horizontal:hover{
+	image: url(:/resources/back_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:left-arrow:horizontal:pressed{
+	image: url(:/resources/back_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:right-arrow:horizontal{
+	image: url(:/resources/next_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:right-arrow:horizontal:hover{
+	image: url(:/resources/next_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:right-arrow:horizontal:pressed{
+	image: url(:/resources/next_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+
+
+QScrollBar:vertical {
+ border: 0px solid rgb(188, 189, 207);
+ border-radius:7px;
+	background-color: rgba(255,255,255,0);
+    width: 13px;
+     margin: 19px 0px 19px 0px;
+ }
+
+ QScrollBar::handle:vertical {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.0272727 rgba(146, 179, 203, 255), stop:1 rgba(228, 240, 248, 255));
+     min-height: 13px;
+   border: 1px solid rgb(168, 172, 204);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:vertical {
+ background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background-color:rgba(255,255,255,0);
+ }
+
+  QScrollBar:up-arrow:vertical{
+	image: url(:/resources/up_arrow.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:up-arrow:vertical:hover{
+	image: url(:/resources/up_arrow.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:up-arrow:vertical:pressed{
+	image: url(:/resources/up_arrow.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:down-arrow:vertical{
+	image: url(:/resources/down_arrow.png);
+   width:13px;
+   height:13px;
+     }
+ QScrollBar:down-arrow:vertical:hover{
+	image: url(:/resources/down_arrow.png);
+   width:15px;
+   height:15px;
+     }
+ QScrollBar:down-arrow:vertical:pressed{
+	image: url(:/resources/down_arrow.png);
+   width:11px;
+   height:11px;
+     }
+
+
+QToolTip {
+     border: 1px solid rgb(188, 189, 207);
+     padding: 0.1px;
+    border-radius:1px;
+	color: rgb(188, 189, 207);
+	background-color: rgb(255, 255, 255);
+   background-origin:padding-box;
+     opacity: 100;
+ }</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QTableWidget" name="tabella">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+ QTableView {
+     border:2px groove rgb(188, 198, 207);   
+	background-color: rgba(255, 255, 255,0);
+	alternate-background-color:rgba(210, 233, 241,130);
+	selection-color: rgb(59, 66, 90);
+	selection-background-color: rgb(118, 126, 175);
+ 
+ }
+QTableView::resizeColumnToContents{
+}
+
+ QHeaderView::section {
+/* background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.00947867 rgba(220, 231, 240, 255), stop:1 rgba(239, 251, 254, 255));
+     border: 0.5px groove rgb(188, 198, 207);
+     height:30px;
+	font: 11pt &quot;Arial&quot;;
+ }
+
+QTableView QTableCornerButton::section {
+     background: rgb(255, 255, 255);
+     border: 0px;
+ }
+QTableWidget{
+	gridline-color:  rgb(188, 198, 207);
+}
+QTableWidgetItem{
+    text-align:center;
+}
+
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::NoDragDrop</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="verticalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <property name="horizontalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>200</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>80</number>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>45</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>45</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>codice 
+ MMAS</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>potenziale 
+ MMAS</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ragione Sociale</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>indirizzo</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Cap</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Comune</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>provincia</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>telefono</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>fiscale/partita iva</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+       <property name="background">
+        <color alpha="0">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QFormLayout" name="formLayout">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      </property>
+      <property name="labelAlignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="formAlignment">
+       <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+        </property>
+        <property name="text">
+         <string>Numero Anagrafiche</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="text_numero_risultati">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>91</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>91</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>numero risultati</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+     border:2px groove rgb(188,198,207);   
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(219, 230, 239, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     font: 11pt &quot;Arial&quot;;
+
+ }</string>
+        </property>
+        <property name="maxLength">
+         <number>200</number>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Normal</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar{
+	background-color: rgb(255,255,255);
+    spacing:5px;
+  border: 0.5px inset white;
+}
+
+QToolButton {
+    border:2px groove rgba(255,255,255,0);
+     border-radius: 11px;
+     background-color: rgba(255,255,255,0);
+
+ }
+
+QToolButton:hover{
+	border: 1px outset rgb(255, 255, 255);
+}
+
+ QToolButton:pressed {
+  /*border: 2px inset rgb(189, 206, 211);*/
+	border:1.5px inset rgb(212, 215, 240);
+	
+ }
+
+ QToolTip {
+     border: 1px solid rgb(188, 189, 207);
+     padding: 0.1px;
+    border-radius:1px;
+	color: rgb(188, 189, 207);
+	background-color: rgb(255, 255, 255);
+   background-origin:padding-box;
+     opacity: 100;
+ }</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="firstButton"/>
+   <addaction name="previousButton"/>
+   <addaction name="nextButton"/>
+   <addaction name="lastButton"/>
+   <addaction name="separator"/>
+   <addaction name="findButton"/>
+   <addaction name="openselButton"/>
+   <addaction name="separator"/>
+   <addaction name="filter"/>
+   <addaction name="cartButton"/>
+   <addaction name="separator"/>
+   <addaction name="printButton"/>
+   <addaction name="textButton"/>
+   <addaction name="wordButton"/>
+   <addaction name="excelButton"/>
+   <addaction name="separator"/>
+   <addaction name="newButton"/>
+   <addaction name="modifyButton"/>
+   <addaction name="eraseButton"/>
+  </widget>
+  <action name="firstButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/firs_not_hovt.png</normaloff>
+     <activeoff>:/resources/first.png</activeoff>
+     <selectedoff>:/resources/first.png</selectedoff>:/resources/firs_not_hovt.png</iconset>
+   </property>
+   <property name="text">
+    <string>primo</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="previousButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/back_not_hov.png</normaloff>
+     <activeoff>:/resources/back.png</activeoff>
+     <selectedoff>:/resources/back.png</selectedoff>:/resources/back_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>precedente</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="nextButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/next_not_hov.png</normaloff>
+     <activeoff>:/resources/next.png</activeoff>
+     <selectedoff>:/resources/next.png</selectedoff>:/resources/next_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>successivo</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="lastButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/last_not_hov.png</normaloff>
+     <activeoff>:/resources/last.png</activeoff>
+     <selectedoff>:/resources/last.png</selectedoff>:/resources/last_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>ultimo</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="newButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/new_doc_not_hov.png</normaloff>
+     <activeoff>:/resources/new_doc.png</activeoff>
+     <selectedoff>:/resources/new_doc.png</selectedoff>:/resources/new_doc_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>nuovo</string>
+   </property>
+   <property name="toolTip">
+    <string>inserisci nuova anagrafica</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="modifyButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/mod_doc_not_hov.png</normaloff>
+     <activeoff>:/resources/mod_doc.png</activeoff>
+     <selectedoff>:/resources/mod_doc.png</selectedoff>:/resources/mod_doc_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>modifica</string>
+   </property>
+   <property name="toolTip">
+    <string>modifica anagrafica</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="printButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/icon_print_not_hov.png</normaloff>
+     <activeoff>:/resources/print.png</activeoff>
+     <selectedoff>:/resources/print.png</selectedoff>:/resources/icon_print_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>stampa</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::ApplicationSpecificRole</enum>
+   </property>
+  </action>
+  <action name="filter">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/data_filter-icon_not_hov.png</normaloff>
+     <activeoff>:/resources/filter.png</activeoff>
+     <selectedoff>:/resources/filter.png</selectedoff>:/resources/data_filter-icon_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>filtro</string>
+   </property>
+   <property name="toolTip">
+    <string>ulteriore selezione</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="eraseButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/eraser_not_hov.png</normaloff>
+     <activeoff>:/resources/eraser.png</activeoff>
+     <selectedoff>:/resources/eraser.png</selectedoff>:/resources/eraser_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>cancella</string>
+   </property>
+   <property name="toolTip">
+    <string>cancella anagrafica</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="findButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/find_not_hov.png</normaloff>
+     <activeoff>:/resources/find.png</activeoff>
+     <selectedoff>:/resources/find.png</selectedoff>:/resources/find_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>trova</string>
+   </property>
+   <property name="toolTip">
+    <string>ricerca anagrafica</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="openselButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/open_select_not_hov.png</normaloff>
+     <activeoff>:/resources/open_sel.png</activeoff>
+     <selectedoff>:/resources/open_sel.png</selectedoff>:/resources/open_select_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>apri selezionato</string>
+   </property>
+   <property name="toolTip">
+    <string>apri anagrafica</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="cartButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/ita_not_hov.png</normaloff>
+     <activeoff>:/resources/italia.png</activeoff>
+     <selectedoff>:/resources/italia.png</selectedoff>:/resources/ita_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>cartografia</string>
+   </property>
+   <property name="toolTip">
+    <string>torna ai risultati della selezione geografica</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="excelButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/export_excel_not_hov.png</normaloff>
+     <activeoff>:/resources/excel.png</activeoff>
+     <selectedoff>:/resources/excel.png</selectedoff>:/resources/export_excel_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>esporta in excel</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::ApplicationSpecificRole</enum>
+   </property>
+  </action>
+  <action name="textButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/text_not_hov.png</normaloff>
+     <activeoff>:/resources/text.png</activeoff>
+     <selectedoff>:/resources/text.png</selectedoff>:/resources/text_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>esporta testo</string>
+   </property>
+   <property name="toolTip">
+    <string>esporta testo</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="wordButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/export_word_not_hov.png</normaloff>
+     <activeoff>:/resources/word.png</activeoff>
+     <selectedoff>:/resources/word.png</selectedoff>:/resources/export_word_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>esporta in word</string>
+   </property>
+   <property name="toolTip">
+    <string>esporta in word</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="risorse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

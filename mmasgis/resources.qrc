@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/plugins/mmasgis">
+        <file>icon.png</file>
+        <file>dbQueries.sql</file>
+    </qresource>
+</RCC>

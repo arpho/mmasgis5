@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowInterrogazioni</class>
+ <widget class="QMainWindow" name="MainWindowInterrogazioni">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>555</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>555</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Filtri</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="risorse.qrc">
+    <normaloff>:/resources/icon_mmas.png</normaloff>:/resources/icon_mmas.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QMenu {
+  background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0.0181818 rgba(233, 240, 243, 255), stop:0.372727 rgba(247, 247, 247, 255), stop:0.659091 rgba(247, 247, 247, 255), stop:1 rgba(233, 240, 243, 255));
+	font: 11pt &quot;Arial&quot;;
+border: 1px outset rgb(188, 189, 207);
+     border-radius: 1px;
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+font: 11pt &quot;Arial&quot;;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+     background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 226, 229, 255), stop:0.254545 rgba(247, 247, 247, 255), stop:0.722727 rgba(247, 247, 247, 255), stop:1 rgba(220, 226, 229, 255));
+color:black;
+	font: 11pt &quot;Arial&quot;;
+ }
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>555</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> /* sets background color  */
+QWidget {
+background-color:rgba(255,255,255,0);
+}
+QWidget#centralWidget{
+	/*background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(217, 239, 255, 255), stop:0.5 rgba(239, 248, 255, 255), stop:1 rgba(210, 236, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(223, 246, 255, 255), stop:0.481132 rgba(243, 243, 243, 255), stop:0.995261 rgba(223, 246, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+	
+}
+
+QToolTip {
+     border: 1px solid rgb(188, 189, 207);
+     padding: 0.1px;
+    border-radius:1px;
+	color: rgb(188, 189, 207);
+	background-color: rgb(255, 255, 255);
+   background-origin:padding-box;
+     opacity: 100;
+ }
+
+QFrame{
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0.0181818 rgba(233, 240, 243, 255), stop:0.372727 rgba(247, 247, 247, 255), stop:0.659091 rgba(247, 247, 247, 255), stop:1 rgba(233, 240, 243, 255));
+ border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+}
+
+
+/* set scrollbar style */
+QScrollBar:horizontal {
+ border: 0px solid rgb(168, 172, 204);
+ border-radius:7px;
+	 background-color:rgba(255,255,255,0);
+     height: 11px;
+     margin: 0px 19px 0px 19px;
+ }
+
+ QScrollBar::handle:horizontal {	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.0272727 rgba(146, 179, 203, 255), stop:1 rgba(228, 240, 248, 255));
+     min-width: 11px;
+   border: 1px solid rgb(168, 172, 204);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:horizontal {
+  background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+  background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	 background-color:rgba(255,255,255,0);
+ }
+
+  QScrollBar:left-arrow:horizontal{
+	image: url(:/resources/back_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+   QScrollBar:left-arrow:horizontal:hover{
+	image: url(:/resources/back_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:left-arrow:horizontal:pressed{
+	image: url(:/resources/back_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:right-arrow:horizontal{
+	image: url(:/resources/next_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:right-arrow:horizontal:hover{
+	image: url(:/resources/next_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:right-arrow:horizontal:pressed{
+	image: url(:/resources/next_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+
+
+QScrollBar:vertical {
+ border: 0px solid rgb(188, 189, 207);
+ border-radius:7px;
+	background-color: rgba(255,255,255,0);
+    width: 13px;
+     margin: 19px 0px 19px 0px;
+ }
+
+ QScrollBar::handle:vertical {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.0272727 rgba(146, 179, 203, 255), stop:1 rgba(228, 240, 248, 255));
+     min-height: 13px;
+   border: 1px solid rgb(168, 172, 204);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:vertical {
+ background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background-color:rgba(255,255,255,0);
+ }
+
+  QScrollBar:up-arrow:vertical{
+	image: url(:/resources/up_arrow.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:up-arrow:vertical:hover{
+	image: url(:/resources/up_arrow.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:up-arrow:vertical:pressed{
+	image: url(:/resources/up_arrow.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:down-arrow:vertical{
+	image: url(:/resources/down_arrow.png);
+   width:13px;
+   height:13px;
+     }
+ QScrollBar:down-arrow:vertical:hover{
+	image: url(:/resources/down_arrow.png);
+   width:15px;
+   height:15px;
+     }
+ QScrollBar:down-arrow:vertical:pressed{
+	image: url(:/resources/down_arrow.png);
+   width:11px;
+   height:11px;
+     }
+
+
+
+
+/* checkbox style*/
+
+QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+
+ }
+
+QCheckBox::indicator:unchecked {
+
+	image: url(:/resources/checkbox_off_en.png);
+ }
+
+
+ QCheckBox::indicator:checked {
+
+	image: url(:/resources/checkbox_on_enabled.png);
+ }
+
+QCheckBox::indicator:unchecked:!enabled {
+
+	image: url(:/resources/checkbox_off_dis.png);
+ }
+
+ QCheckBox::indicator:checked:!enabled {
+
+	image: url(:/resources/checkbox_on_disabled.png);
+ }
+
+QCheckBox::indicator:unchecked:hover {
+
+	image: url(:/resources/checkbox_off_enabled_hover.png);
+ }
+
+
+ QCheckBox::indicator:checked:hover {
+
+	image: url(:/resources/checkbox_on_enabled_hover.png);
+ }
+</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>781</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+     border:2px groove rgb(188, 198, 207);   
+	background-color: rgb(255, 255, 255);
+	alternate-background-color:rgba(210, 233, 241,130);
+	
+ }
+
+ QHeaderView::section {
+/* background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.00947867 rgba(220, 231, 240, 255), stop:1 rgba(239, 251, 254, 255));
+     border: 0.5px groove rgb(188, 198, 207);
+     height:20px;
+	font: 11pt &quot;Arial&quot;;
+ }
+
+QTableView QTableCornerButton::section {
+     background: rgb(255, 255, 255);
+     border: 0px;
+ }
+
+QTabWidget::pane { /* The tab widget frame */
+     border-top: 2px groove rgb(188, 198, 207);
+ 
+ }
+
+ QTabWidget::tab-bar {
+     left: 5px; /* move to the right by 5px */
+ }
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+ QTabBar::tab {
+     
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(199, 209, 217, 255), stop:0.905213 rgba(239, 251, 254, 255));
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(118, 212, 230, 255), stop:1 rgba(255, 255, 255, 255));*/
+     border: 2px groove rgb(188, 198, 207);
+    border-bottom:0.5px;
+     border-bottom-color: rgb(188, 198, 207); /* same as the pane color */
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     width: 119px;
+    height:29px;
+     padding: 3px;
+ }
+
+ QTabBar::tab:selected, QTabBar::tab:hover {
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+ }
+
+ QTabBar::tab:selected {
+     border-color: rgb(188, 198, 207);
+     border-bottom-color: rgb(188, 198, 207); /* same as pane color */
+ }
+
+ QTabBar::tab:!selected {
+     margin-top: 1px; /* make non-selected tabs look smaller */
+ }</string>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab_parametri">
+     <attribute name="title">
+      <string>PARAMETRI</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>231</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>filtra per</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="attributeList_parametri">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>231</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="verticalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <property name="indentation">
+       <number>0</number>
+      </property>
+      <attribute name="headerVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="headerCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="headerDefaultSectionSize">
+       <number>310</number>
+      </attribute>
+      <attribute name="headerMinimumSectionSize">
+       <number>300</number>
+      </attribute>
+      <attribute name="headerStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>256</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>valori</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="availableValueList_parametri">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>30</y>
+        <width>256</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px groove rgb(188, 198, 207);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>10</y>
+        <width>256</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>selezionati</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="selectedValueList_parametri">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>30</y>
+        <width>256</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px groove rgb(188, 198, 207);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_marchi">
+     <attribute name="title">
+      <string>MARCHE</string>
+     </attribute>
+     <widget class="QTreeWidget" name="attributesList_marchi">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>231</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+      <property name="verticalScrollMode">
+       <enum>QAbstractItemView::ScrollPerPixel</enum>
+      </property>
+      <property name="indentation">
+       <number>0</number>
+      </property>
+      <property name="rootIsDecorated">
+       <bool>true</bool>
+      </property>
+      <attribute name="headerVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="headerCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="headerDefaultSectionSize">
+       <number>310</number>
+      </attribute>
+      <attribute name="headerMinimumSectionSize">
+       <number>310</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>select</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+     <widget class="QListWidget" name="availableValueList_marchi">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>30</y>
+        <width>256</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px groove rgb(188, 198, 207);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="selectedValueList_marchi">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>30</y>
+        <width>256</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px groove rgb(188, 198, 207);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>231</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>filtra per</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>256</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>valori</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>10</y>
+        <width>256</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>selezionati</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_potenziali">
+     <attribute name="title">
+      <string>POTENZIALI</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>231</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>filtra per</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>256</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>valori</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="attributeList_potenziali">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>231</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="indentation">
+       <number>0</number>
+      </property>
+      <attribute name="headerVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="headerDefaultSectionSize">
+       <number>300</number>
+      </attribute>
+      <attribute name="headerMinimumSectionSize">
+       <number>50</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+     <widget class="QListWidget" name="availableValueList_potenziali">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>30</y>
+        <width>256</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px groove rgb(188, 198, 207);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="selectedValueList_potenziali">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>30</y>
+        <width>256</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px groove rgb(188, 198, 207);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>10</y>
+        <width>256</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>selezionati</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="resetButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>refresh</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	image: url(:/resources/refresh_filter.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	image: url(:/resources/refresh.png);
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } 
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="applyButton">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>applica filtro</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/filter_ok_not_hov.png);
+
+
+ }
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+	border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	image: url(:/resources/filter_ok.png);
+ } 
+
+
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+
+ }
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>salva query</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/icon_save_not_hov.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	image: url(:/resources/icon_save.png);
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } 
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>carica query</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/open_folder.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	
+	image: url(:/resources/open_folder_hov.png);
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } 
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionProva">
+   <property name="text">
+    <string>Prova</string>
+   </property>
+  </action>
+  <action name="actionProva_2">
+   <property name="text">
+    <string>Prova</string>
+   </property>
+  </action>
+  <action name="actionProva_3">
+   <property name="text">
+    <string>Prova</string>
+   </property>
+  </action>
+  <action name="actionProva_4">
+   <property name="text">
+    <string>Prova</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="risorse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Albero</class>
+ <widget class="QMainWindow" name="Albero">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>230</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>230</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>230</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Elenco Territori</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="stile_albero.qrc">
+    <normaloff>:/resources/icon.png</normaloff>:/resources/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background-color:rgba(255,255,255,0);
+}
+QWidget#centralWidget{
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+}
+QToolTip {
+     border: 1px solid rgb(188, 189, 207);
+     padding: 0.1px;
+    border-radius:1px;
+	color: rgb(188, 189, 207);
+	background-color: rgb(255, 255, 255);
+   background-origin:padding-box;
+     opacity: 100;
+ }</string>
+   </property>
+   <widget class="QLabel" name="etichetta">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>231</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Italia</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cercaButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>98</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton {
+     border: 2px outset  rgb(188, 198, 207);
+     border-radius: 5px;
+     background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+   
+ }
+
+ QPushButton:pressed {
+	border: 2px inset  rgb(188, 198, 207);
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+</string>
+    </property>
+    <property name="text">
+     <string>CERCA</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="albero">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>211</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTreeWidget{
+border:2px groove rgb(188, 198, 207);  
+}</string>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="indentation">
+     <number>10</number>
+    </property>
+    <property name="headerHidden">
+     <bool>true</bool>
+    </property>
+    <property name="expandsOnDoubleClick">
+     <bool>false</bool>
+    </property>
+    <attribute name="headerDefaultSectionSize">
+     <number>300</number>
+    </attribute>
+    <attribute name="headerMinimumSectionSize">
+     <number>300</number>
+    </attribute>
+    <attribute name="headerStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string/>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="plusNodes">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>esplodi nodi</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/ptree.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minusNodes">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>chiudi nodi</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/micon.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="stile_albero.qrc"/>
+ </resources>
+ <connections/>
+</ui>

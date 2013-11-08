@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelectionQueryWindow</class>
+ <widget class="QMainWindow" name="SelectionQueryWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>370</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>370</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Caricamento Query</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="risorse.qrc">
+    <normaloff>:/resources/icon_mmas.png</normaloff>:/resources/icon_mmas.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+background-color:rgba(255,255,255,0);
+}
+QWidget#centralWidget{
+	/*background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(217, 239, 255, 255), stop:0.5 rgba(239, 248, 255, 255), stop:1 rgba(210, 236, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(223, 246, 255, 255), stop:0.481132 rgba(243, 243, 243, 255), stop:0.995261 rgba(223, 246, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+	
+}
+
+QToolTip {
+     border: 1px solid rgb(188, 189, 207);
+     padding: 0.1px;
+    border-radius:1px;
+	color: rgb(188, 189, 207);
+	background-color: rgb(255, 255, 255);
+   background-origin:padding-box;
+     opacity: 100;
+ }
+
+/* set scrollbar style */
+QScrollBar:horizontal {
+ border: 1px solid rgb(188, 189, 207);
+ border-radius:7px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+     height: 15px;
+     margin: 0px 19px 0px 19px;
+ }
+
+ QScrollBar::handle:horizontal {
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(140, 159, 171, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     min-width: 13px;
+   border: 2px groove rgb(188, 189, 207);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:horizontal {
+ /*border:2px groove rgb(188, 198, 207);  
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 7px;*/
+  background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+   /*border:2px groove rgb(188, 198, 207);  
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 7px;*/
+  background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.00947867 rgba(232, 237, 240, 255), stop:1 rgba(239, 251, 254, 255));
+ }
+
+  QScrollBar:left-arrow:horizontal{
+	image: url(:/resources/back_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+   QScrollBar:left-arrow:horizontal:hover{
+	image: url(:/resources/back_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:left-arrow:horizontal:pressed{
+	image: url(:/resources/back_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:right-arrow:horizontal{
+	image: url(:/resources/next_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:right-arrow:horizontal:hover{
+	image: url(:/resources/next_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:right-arrow:horizontal:pressed{
+	image: url(:/resources/next_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+
+
+
+
+
+
+
+
+QScrollBar:vertical {
+ border: 1px solid rgb(188, 189, 207);
+ border-radius:7px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+    width: 15px;
+     margin: 19px 0px 19px 0px;
+ }
+
+ QScrollBar::handle:vertical {
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(140, 159, 171, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     min-height: 13px;
+   border: 2px groove rgb(188, 189, 207);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:vertical {
+ background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.00947867 rgba(232, 237, 240, 255), stop:1 rgba(239, 251, 254, 255));
+ }
+
+  QScrollBar:up-arrow:vertical{
+	image: url(:/resources/up_arrow.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:up-arrow:vertical:hover{
+	image: url(:/resources/up_arrow.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:up-arrow:vertical:pressed{
+	image: url(:/resources/up_arrow.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:down-arrow:vertical{
+	image: url(:/resources/down_arrow.png);
+   width:13px;
+   height:13px;
+     }
+ QScrollBar:down-arrow:vertical:hover{
+	image: url(:/resources/down_arrow.png);
+   width:15px;
+   height:15px;
+     }
+ QScrollBar:down-arrow:vertical:pressed{
+	image: url(:/resources/down_arrow.png);
+   width:11px;
+   height:11px;
+     }</string>
+   </property>
+   <widget class="QTableWidget" name="tableQuery">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>471</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+     border:2px groove rgb(188, 198, 207);   
+	background-color: rgba(255, 255, 255,0);
+	alternate-background-color:rgba(210, 233, 241,130);
+	
+ }
+QTableView::resizeColumnToContents{
+}
+
+ QHeaderView::section {
+/* background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.00947867 rgba(220, 231, 240, 255), stop:1 rgba(239, 251, 254, 255));
+     border: 0.5px groove rgb(188, 198, 207);
+     height:30px;
+	font: 11pt &quot;Arial&quot;;
+ }
+
+QTableView QTableCornerButton::section {
+     background: rgb(255, 255, 255);
+     border: 0px;
+ }
+QTableWidget{
+	gridline-color:  rgb(188, 198, 207);
+}
+</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>230</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>210</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Query</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descrizione</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="Selezione">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>carica query</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/icon_load_not_hov.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	
+	image: url(:/resources/icon_load.png);
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } 
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Eliminazione">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>elimina query</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/no_filter_not_hov.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	
+	image: url(:/resources/no_filter.png);
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } 
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="risorse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

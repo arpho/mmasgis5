@@ -1,0 +1,2270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowAnagrafica</class>
+ <widget class="QMainWindow" name="MainWindowAnagrafica">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Scheda Anagrafica</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="risorse.qrc">
+    <normaloff>:/resources/icon_mmas.png</normaloff>:/resources/icon_mmas.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> /* sets background color  */
+QWidget {
+background-color:rgba(255,255,255,0);
+}
+QWidget#centralWidget{
+	/*background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(217, 239, 255, 255), stop:0.5 rgba(239, 248, 255, 255), stop:1 rgba(210, 236, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(223, 246, 255, 255), stop:0.481132 rgba(243, 243, 243, 255), stop:0.995261 rgba(223, 246, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+	
+}
+
+/* set scrollbar style */
+QScrollBar:horizontal {
+ border: 0px solid rgb(168, 172, 204);
+ border-radius:7px;
+	 background-color:rgba(255,255,255,0);
+     height: 13px;
+     margin: 0px 19px 0px 19px;
+ }
+
+ QScrollBar::handle:horizontal {	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.0272727 rgba(146, 179, 203, 255), stop:1 rgba(228, 240, 248, 255));
+     min-width: 11px;
+   border: 1px solid rgb(168, 172, 204);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:horizontal {
+  background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+  background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	 background-color:rgba(255,255,255,0);
+ }
+
+  QScrollBar:left-arrow:horizontal{
+	image: url(:/resources/back_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+   QScrollBar:left-arrow:horizontal:hover{
+	image: url(:/resources/back_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:left-arrow:horizontal:pressed{
+	image: url(:/resources/back_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:right-arrow:horizontal{
+	image: url(:/resources/next_not_hov.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:right-arrow:horizontal:hover{
+	image: url(:/resources/next_not_hov.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:right-arrow:horizontal:pressed{
+	image: url(:/resources/next_not_hov.png);
+   width:11px;
+   height:11px;
+     }
+
+
+QScrollBar:vertical {
+ border: 0px solid rgb(188, 189, 207);
+ border-radius:7px;
+	background-color: rgba(255,255,255,0);
+    width: 11px;
+     margin: 19px 0px 19px 0px;
+ }
+
+ QScrollBar::handle:vertical {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.0272727 rgba(146, 179, 203, 255), stop:1 rgba(228, 240, 248, 255));
+     min-height: 13px;
+   border: 1px solid rgb(168, 172, 204);
+   border-radius:5px;
+ }
+ QScrollBar::add-line:vertical {
+ background-color:rgba(255,255,255,0);
+   width: 13px;
+   height:13px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     background-color:rgba(255,255,255,0);
+     width: 13px;
+    height:13px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background-color:rgba(255,255,255,0);
+ }
+
+  QScrollBar:up-arrow:vertical{
+	image: url(:/resources/up_arrow.png);
+   width:13px;
+   height:13px;
+     }
+  QScrollBar:up-arrow:vertical:hover{
+	image: url(:/resources/up_arrow.png);
+   width:15px;
+   height:15px;
+     }
+  QScrollBar:up-arrow:vertical:pressed{
+	image: url(:/resources/up_arrow.png);
+   width:11px;
+   height:11px;
+     }
+ QScrollBar:down-arrow:vertical{
+	image: url(:/resources/down_arrow.png);
+   width:13px;
+   height:13px;
+     }
+ QScrollBar:down-arrow:vertical:hover{
+	image: url(:/resources/down_arrow.png);
+   width:15px;
+   height:15px;
+     }
+ QScrollBar:down-arrow:vertical:pressed{
+	image: url(:/resources/down_arrow.png);
+   width:11px;
+   height:11px;
+     }
+
+
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QFormLayout" name="formLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_codice_mmas">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Normal</enum>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="codiceMMAS">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Codice MMAS</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="checkBox_cliente">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>85</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox {
+     spacing: 2px;
+     border:2px groove rgb(188,198,207);   
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(219, 230, 239, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 5px;
+     padding: 0 3px;
+         font: 10pt &quot;Arial&quot;;
+ }
+QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+ }
+
+QCheckBox::indicator:unchecked {
+	
+	image: url(:/resources/checkbox_off_en.png);
+ }
+
+
+ QCheckBox::indicator:checked {
+	
+	image: url(:/resources/checkbox_on_enabled.png);
+ }
+
+QCheckBox::indicator:unchecked:!enabled {
+	
+	image: url(:/resources/checkbox_off_dis.png);
+ }
+
+ QCheckBox::indicator:checked:!enabled {
+    
+	image: url(:/resources/checkbox_on_disabled.png);
+ }
+
+QCheckBox::indicator:unchecked:hover {
+	
+	image: url(:/resources/checkbox_off_enabled_hover.png);
+ }
+
+
+ QCheckBox::indicator:checked:hover {
+	
+	image: url(:/resources/checkbox_on_enabled_hover.png);
+ }
+
+
+ 
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Cliente</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>15</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <layout class="QFormLayout" name="formLayout_2">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="CodiceCliente">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Codice Cliente</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_codice_cliente">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="3">
+       <layout class="QFormLayout" name="formLayout_3">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_potenziale">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="PotenzialeMMAS">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Potenziale MMAS</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" colspan="4">
+       <layout class="QFormLayout" name="formLayout_4">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="RagioneSociale">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Ragione Sociale</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_ragione_sociale">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>665</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <layout class="QFormLayout" name="formLayout_5">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Titolare">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Titolare</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_titolare">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>435</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="3">
+       <layout class="QFormLayout" name="formLayout_6">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="CodFiscale">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Cod. Fis. / P. IVA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_codice_fiscale">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0" colspan="4">
+       <layout class="QFormLayout" name="formLayout_7">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Indirizzo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Indirizzo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_indirizzo">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>665</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <layout class="QFormLayout" name="formLayout_8">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Comune">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Comune</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_comune">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="2">
+       <layout class="QFormLayout" name="formLayout_9">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Provincia">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Provincia</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_provincia">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="3">
+       <layout class="QFormLayout" name="formLayout_10">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_cap">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="CAP">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>CAP</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0" colspan="3">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QFormLayout" name="formLayout_14">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
+          <property name="horizontalSpacing">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="Telefono">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+            </property>
+            <property name="text">
+             <string>Telefono</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="text_telefono">
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QFormLayout" name="formLayout_15">
+          <property name="horizontalSpacing">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="Telefono2">
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Telefono2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="text_telefono_2">
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <layout class="QFormLayout" name="formLayout_16">
+          <property name="horizontalSpacing">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="Telefono3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Telefono3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="text_telefono_3">
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="3">
+       <layout class="QFormLayout" name="formLayout_17">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="Fax">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+          </property>
+          <property name="text">
+           <string>Fax</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="text_fax">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0" colspan="4">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinimumSize</enum>
+        </property>
+        <item row="0" column="0">
+         <layout class="QFormLayout" name="formLayout_13">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
+          <property name="fieldGrowthPolicy">
+           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <property name="horizontalSpacing">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="Email">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+            </property>
+            <property name="text">
+             <string>Email</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="text_mail">
+            <property name="minimumSize">
+             <size>
+              <width>285</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QFormLayout" name="formLayout_12">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
+          <property name="horizontalSpacing">
+           <number>3</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="SitoInternet">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">   	border-bottom:1px solid;
+     border-bottom-color: rgb(188, 198, 207);
+    background-color: rgba(255, 255, 255, 0);
+     border-radius: 5px;
+     padding: 0 0px;</string>
+            </property>
+            <property name="text">
+             <string>Sito Internet</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="text_sito">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>321</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));
+     font: 9pt &quot;Arial&quot;;
+
+ }</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>801</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>801</width>
+        <height>39</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+     border-radius: 5px;
+    border:2px groove rgb(188, 198, 207);
+     background-color:  rgba(255, 255, 255, 0);
+        margin: 6px;
+
+}
+QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top left; /* position at the top center */
+     padding: 0 3px;
+     border:2px groove rgb(188, 198, 207);
+  background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+        font: 11pt &quot;Arial&quot;;
+     border-radius: 5px;
+}
+</string>
+      </property>
+      <property name="title">
+       <string>Certificazione</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_anagrafica">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>116</x>
+         <y>9</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    spacing: 0px;
+     border:2px groove rgb(188, 198, 207);   
+		/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 5px;
+     padding:0 px;
+         font: 9pt &quot;Arial&quot;;
+ }
+
+QCheckBox::indicator {
+   padding:2px;
+     width: 13px;
+     height: 13px;
+ }
+
+QCheckBox::indicator:unchecked {
+	
+	image: url(:/resources/checkbox_off_en.png);
+ }
+
+
+ QCheckBox::indicator:checked {
+	
+	image: url(:/resources/checkbox_on_enabled.png);
+ }
+
+QCheckBox::indicator:unchecked:!enabled {
+	
+	image: url(:/resources/checkbox_off_dis.png);
+ }
+
+ QCheckBox::indicator:checked:!enabled {
+    
+	image: url(:/resources/checkbox_on_disabled.png);
+ }
+
+QCheckBox::indicator:unchecked:hover {
+	
+	image: url(:/resources/checkbox_off_enabled_hover.png);
+ }
+
+
+ QCheckBox::indicator:checked:hover {
+	
+	image: url(:/resources/checkbox_on_enabled_hover.png);
+ }
+</string>
+       </property>
+       <property name="text">
+        <string>Anagrafica Certificata</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="date_aggiornamento">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>401</x>
+         <y>10</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+}
+QDateEdit{
+    spacing: 0px;
+    border:2px groove rgb(188, 198, 207);   
+  	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 5px;
+     padding: 0 px;
+     font: 9pt &quot;Arial&quot;;
+}
+
+QTableView {
+    border:2px groove rgb(188, 198, 207);   
+	  background-color: rgb(255,255,255);
+alternate-background-color:rgba(210, 233, 241,130);
+	font: 10pt &quot;Arial&quot;;
+ }
+  
+
+
+QMenu { 
+   font-size:16px; 
+   width: 150px; 
+   left: 90px; 
+   background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+   color:black;
+}
+
+QToolButton {
+
+  background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+  height: 70px; 
+  width: 75px;
+  color:black;
+}
+
+QAbstractItemView {
+	selection-background-color: rgb(188, 198, 207);
+   selection-color:black;
+}
+
+QListView {
+  background-color:white;
+  width:70px;
+}
+QSpinBox {
+ background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+}
+</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="displayFormat">
+        <string>dd/MM/yyyy</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>279</x>
+         <y>10</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">  spacing: 0px;
+     border:2px groove rgb(188, 198, 207);   
+		/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));*/
+     border-radius: 5px;
+     padding: 0 px;
+  
+</string>
+       </property>
+       <property name="text">
+        <string>Data Aggiornamento</string>
+       </property>
+      </widget>
+      <zorder>date_aggiornamento</zorder>
+      <zorder>label</zorder>
+      <zorder>checkBox_anagrafica</zorder>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+     border:2px groove rgb(188, 198, 207);   
+	background-color: rgba(255, 255, 255,0);
+	alternate-background-color:rgba(210, 233, 241,130);
+	
+ }
+QTableWidget{
+	gridline-color:  rgb(188, 198, 207);
+}
+
+ QHeaderView::section {
+/* background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.00947867 rgba(220, 231, 240, 255), stop:1 rgba(239, 251, 254, 255));
+     border: 0.5px groove rgb(188, 198, 207);
+     height:20px;
+	font: 11pt &quot;Arial&quot;;
+ }
+
+QTableView QTableCornerButton::section {
+     background: rgb(255, 255, 255);
+     border: 0px;
+ }
+
+QTabWidget::pane { /* The tab widget frame */
+     border-top: 2px groove rgb(188, 198, 207);
+ 
+ }
+
+ QTabWidget::tab-bar {
+     left: 5px; /* move to the right by 5px */
+ }
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+ QTabBar::tab {
+     
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(199, 209, 217, 255), stop:0.905213 rgba(239, 251, 254, 255));
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(118, 212, 230, 255), stop:1 rgba(255, 255, 255, 255));*/
+     border: 2px groove rgb(188, 198, 207);
+     border-bottom-color: rgb(188, 198, 207); /* same as the pane color */
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     min-width: 17ex;
+     padding: 2px;
+ }
+
+ QTabBar::tab:selected, QTabBar::tab:hover {
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(212, 223, 232, 255), stop:0.905213 rgba(239, 251, 254, 255));
+ }
+
+ QTabBar::tab:selected {
+     border-color: rgb(188, 198, 207);
+     border-bottom-color: rgb(188, 198, 207); /* same as pane color */
+ }
+
+ QTabBar::tab:!selected {
+     margin-top: 2px; /* make non-selected tabs look smaller */
+ }
+</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <widget class="QWidget" name="tab_parametri_m">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Parametri MMAS</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="table_parametri_mmas">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>380</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>380</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_marchi_m">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>Marche MMAS</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="table_marchi_classe">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTableWidget{	
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0.0181818 rgba(233, 240, 243, 255), stop:0.372727 rgba(247, 247, 247, 255), stop:0.659091 rgba(247, 247, 247, 255), stop:1 rgba(233, 240, 243, 255));
+}</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="dragDropOverwriteMode">
+           <bool>false</bool>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>250</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>250</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QTableWidget" name="table_marchi">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTableWidget{	
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0.0181818 rgba(233, 240, 243, 255), stop:0.372727 rgba(247, 247, 247, 255), stop:0.659091 rgba(247, 247, 247, 255), stop:1 rgba(233, 240, 243, 255));
+}</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>250</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>250</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_potenziali_m">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>Potenziali MMAS</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="table_potenziali_mmas">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>385</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>385</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_parametri_t">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>Parametri Territoriali</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="table_parametri_territoriali">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>250</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>250</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_note">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>Note</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="text_note">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255,0);
+ border:2px groove rgb(188, 198, 207);   </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar{
+	background-color: rgb(255,255,255);
+    spacing:5px;
+  border: 0.5px inset white;
+}
+
+QToolButton {
+    border:2px groove rgba(255,255,255,0);
+     border-radius: 11px;
+     background-color: rgba(255,255,255,0);
+
+ }
+
+QToolButton:hover{
+	border: 1px outset rgb(255, 255, 255);
+}
+
+ QToolButton:pressed {
+  /*border: 2px inset rgb(189, 206, 211);*/
+	border:1.5px inset rgb(212, 215, 240);
+	
+ }
+
+ QToolTip {
+     border: 1px solid rgb(188, 189, 207);
+     padding: 0.1px;
+    border-radius:1px;
+	color: rgb(188, 189, 207);
+	background-color: rgb(255, 255, 255);
+   background-origin:padding-box;
+     opacity: 100;
+ }</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="firstButton"/>
+   <addaction name="previousButton"/>
+   <addaction name="nextButton"/>
+   <addaction name="lastButton"/>
+   <addaction name="separator"/>
+   <addaction name="pdfButton"/>
+   <addaction name="separator"/>
+   <addaction name="newButton"/>
+   <addaction name="modifyButton"/>
+   <addaction name="eraseButton"/>
+   <addaction name="separator"/>
+   <addaction name="savemodButton"/>
+   <addaction name="deletemodButton"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="savemodButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/ok_not_hov.png</normaloff>
+     <activeoff>:/resources/ok.png</activeoff>
+     <selectedoff>:/resources/ok.png</selectedoff>:/resources/ok_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>salva_modifica</string>
+   </property>
+  </action>
+  <action name="deletemodButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/del_not_hov.png</normaloff>
+     <activeoff>:/resources/del.png</activeoff>
+     <selectedoff>:/resources/del.png</selectedoff>:/resources/del_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>annulla_modifica</string>
+   </property>
+  </action>
+  <action name="firstButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/firs_not_hovt.png</normaloff>
+     <activeoff>:/resources/first.png</activeoff>
+     <selectedoff>:/resources/first.png</selectedoff>:/resources/firs_not_hovt.png</iconset>
+   </property>
+   <property name="text">
+    <string>primo</string>
+   </property>
+  </action>
+  <action name="previousButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/back_not_hov.png</normaloff>
+     <activeoff>:/resources/back.png</activeoff>
+     <selectedoff>:/resources/back.png</selectedoff>:/resources/back_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>precedente</string>
+   </property>
+  </action>
+  <action name="nextButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/next_not_hov.png</normaloff>
+     <activeoff>:/resources/next.png</activeoff>
+     <selectedoff>:/resources/next.png</selectedoff>:/resources/next_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>successivo</string>
+   </property>
+  </action>
+  <action name="lastButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/last_not_hov.png</normaloff>
+     <activeoff>:/resources/last.png</activeoff>
+     <selectedoff>:/resources/last.png</selectedoff>:/resources/last_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>ultimo</string>
+   </property>
+  </action>
+  <action name="newButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/new_doc_not_hov.png</normaloff>
+     <activeoff>:/resources/new_doc.png</activeoff>
+     <selectedoff>:/resources/new_doc.png</selectedoff>:/resources/new_doc_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>nuovo</string>
+   </property>
+  </action>
+  <action name="modifyButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/mod_doc_not_hov.png</normaloff>
+     <activeoff>:/resources/mod_doc.png</activeoff>
+     <selectedoff>:/resources/mod_doc.png</selectedoff>:/resources/mod_doc_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>modifica</string>
+   </property>
+  </action>
+  <action name="eraseButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/eraser_not_hov.png</normaloff>
+     <activeoff>:/resources/eraser.png</activeoff>
+     <selectedoff>:/resources/eraser.png</selectedoff>:/resources/eraser_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>cancella</string>
+   </property>
+  </action>
+  <action name="pdfButton">
+   <property name="icon">
+    <iconset resource="risorse.qrc">
+     <normaloff>:/resources/pdf_not_hov.png</normaloff>
+     <activeoff>:/resources/pdf.png</activeoff>
+     <selectedoff>:/resources/pdf.png</selectedoff>:/resources/pdf_not_hov.png</iconset>
+   </property>
+   <property name="text">
+    <string>esporta in pdf</string>
+   </property>
+   <property name="toolTip">
+    <string>esporta in pdf</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="risorse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

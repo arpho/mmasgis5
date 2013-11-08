@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowRicercaAnagrafica</class>
+ <widget class="QMainWindow" name="MainWindowRicercaAnagrafica">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ricerca Anagrafica</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="stile_ricerca_anagrafica.qrc">
+    <normaloff>:/resources/World.png</normaloff>:/resources/World.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"> /* sets background color  */
+QWidget {
+background-color:rgba(255,255,255,0);
+}
+QWidget#centralWidget{
+	/*background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(217, 239, 255, 255), stop:0.5 rgba(239, 248, 255, 255), stop:1 rgba(210, 236, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(223, 246, 255, 255), stop:0.481132 rgba(243, 243, 243, 255), stop:0.995261 rgba(223, 246, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+	
+}
+QLineEdit {
+     border: 1px inset rgb(188, 189, 207);
+     border-radius: 5px;
+     padding: 0 3px;
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.127962 rgba(239, 251, 254, 255), stop:0.862559 rgba(219, 230, 239, 255));*/
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 232, 243, 255), stop:0.35545 rgba(247, 247, 247, 255), stop:0.635071 rgba(247, 247, 247, 255), stop:0.933649 rgba(220, 232, 243, 255));
+     font: 11pt &quot;Arial&quot;;
+
+ }</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>121</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Codice MMAS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>121</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Codice Cliente</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_codiceMMAS">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>231</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_codcliente">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>100</y>
+      <width>231</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>131</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ragione Sociale</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_ragionesociale">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>471</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Indirizzo</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="text_indirizzo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>471</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="check_minma">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+     spacing: 2px;
+     border:2px groove rgb(188,198,207);   
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(219, 230, 239, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 5px;
+     padding: 0 3px;
+         font: 10pt &quot;Arial&quot;;
+ }
+QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+ }
+
+QCheckBox::indicator:unchecked {
+	
+	image: url(:/resources/checkbox_off_en.png);
+ }
+
+
+ QCheckBox::indicator:checked {
+	
+	image: url(:/resources/checkbox_on_enabled.png);
+ }
+
+QCheckBox::indicator:unchecked:!enabled {
+	
+	image: url(:/resources/checkbox_off_dis.png);
+ }
+
+ QCheckBox::indicator:checked:!enabled {
+    
+	image: url(:/resources/checkbox_on_disabled.png);
+ }
+
+QCheckBox::indicator:unchecked:hover {
+	
+	image: url(:/resources/checkbox_off_enabled_hover.png);
+ }
+
+
+ QCheckBox::indicator:checked:hover {
+	
+	image: url(:/resources/checkbox_on_enabled_hover.png);
+ }
+
+
+ 
+
+</string>
+    </property>
+    <property name="text">
+     <string>Maiuscole/minuscole</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="check_int">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>260</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+     spacing: 2px;
+     border:2px groove rgb(188,198,207);   
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(169, 228, 255, 255), stop:1 rgba(255, 255, 255, 255));*/
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0.208531 rgba(219, 230, 239, 255), stop:0.905213 rgba(239, 251, 254, 255));
+     border-radius: 5px;
+     padding: 0 3px;
+         font: 10pt &quot;Arial&quot;;
+ }
+QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+ }
+
+QCheckBox::indicator:unchecked {
+	
+	image: url(:/resources/checkbox_off_en.png);
+ }
+
+
+ QCheckBox::indicator:checked {
+	
+	image: url(:/resources/checkbox_on_enabled.png);
+ }
+
+QCheckBox::indicator:unchecked:!enabled {
+	
+	image: url(:/resources/checkbox_off_dis.png);
+ }
+
+ QCheckBox::indicator:checked:!enabled {
+    
+	image: url(:/resources/checkbox_on_disabled.png);
+ }
+
+QCheckBox::indicator:unchecked:hover {
+	
+	image: url(:/resources/checkbox_off_enabled_hover.png);
+ }
+
+
+ QCheckBox::indicator:checked:hover {
+	
+	image: url(:/resources/checkbox_on_enabled_hover.png);
+ }
+
+
+ 
+
+</string>
+    </property>
+    <property name="text">
+     <string>Solo parole intere</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="trovaButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* pushbutton style */
+QPushButton {
+     border: 1px groove rgba(255,255,255,0);
+     border-radius: 5px;
+	background-color: rgba(255, 255, 255,0);
+	
+	image: url(:/resources/filter_ok_not_hov.png);
+
+ }
+
+ QPushButton:hover {
+     border: 1px outset rgb(188, 189, 207);
+border-radius:3px;
+	background-color: rgba(255, 255, 255, 0);
+	
+	image: url(:/resources/filter_ok.png);
+ } 
+QPushButton:pressed {
+     border: 3px inset rgb(188, 189, 207);
+	border-radius:3px;
+ } 
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="stile_ricerca_anagrafica.qrc"/>
+ </resources>
+ <connections/>
+</ui>
