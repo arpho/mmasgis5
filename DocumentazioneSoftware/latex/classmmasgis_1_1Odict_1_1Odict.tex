@@ -1,0 +1,110 @@
+\hypertarget{classmmasgis_1_1Odict_1_1Odict}{
+\section{mmasgis::Odict::Odict Class Reference}
+\label{classmmasgis_1_1Odict_1_1Odict}\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Odict_1_1Odict_a9969897d5f27dcb29d8752134299574a}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Odict_1_1Odict_acf2818afbc291e8d2c67f866e6bbd5f8}{\_\-\_\-setitem\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Odict_1_1Odict_aa7740de76588e4546bd504a78610c2d8}{clear}
+\item 
+def \hyperlink{classmmasgis_1_1Odict_1_1Odict_af3017c77cf475524469f1c7ff421226c}{iterkeys}
+\item 
+def \hyperlink{classmmasgis_1_1Odict_1_1Odict_ab982708f6d838ab3577652255be1d60b}{getElementList}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Odict_1_1Odict_a447733cd53020057a0142f815bce318b}{order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+implementa un' ordered dict estendendo la classe dict
+crea una lista che memorizza le chiavi inserite nel dict  con lo stesso ordine di inserimento
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Odict_1_1Odict_a9969897d5f27dcb29d8752134299574a}{
+\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Odict::Odict::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Odict_1_1Odict_a9969897d5f27dcb29d8752134299574a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Odict_1_1Odict_acf2818afbc291e8d2c67f866e6bbd5f8}{
+\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}!\_\-\_\-setitem\_\-\_\-@{\_\-\_\-setitem\_\-\_\-}}
+\index{\_\-\_\-setitem\_\-\_\-@{\_\-\_\-setitem\_\-\_\-}!mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+\subsubsection[{\_\-\_\-setitem\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Odict::Odict::\_\-\_\-setitem\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Odict_1_1Odict_acf2818afbc291e8d2c67f866e6bbd5f8}
+\begin{DoxyVerb}
+override di __setitem__
+oltre alle normali operazioni di __setitem__ inserisce le chiavi in self.order,
+ solo se la chiave non e'  gia' presente nell'istanza di odict 
+@param key: come in dict 
+@param value:come in dict
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Odict_1_1Odict_aa7740de76588e4546bd504a78610c2d8}{
+\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}!clear@{clear}}
+\index{clear@{clear}!mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Odict::Odict::clear (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Odict_1_1Odict_aa7740de76588e4546bd504a78610c2d8}
+\hypertarget{classmmasgis_1_1Odict_1_1Odict_ab982708f6d838ab3577652255be1d60b}{
+\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}!getElementList@{getElementList}}
+\index{getElementList@{getElementList}!mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+\subsubsection[{getElementList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Odict::Odict::getElementList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Odict_1_1Odict_ab982708f6d838ab3577652255be1d60b}
+\begin{DoxyVerb}
+ritorna la lista degli elementi in odict con il loro ordine di inserimento
+@return [object]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Odict_1_1Odict_af3017c77cf475524469f1c7ff421226c}{
+\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}!iterkeys@{iterkeys}}
+\index{iterkeys@{iterkeys}!mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+\subsubsection[{iterkeys}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Odict::Odict::iterkeys (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Odict_1_1Odict_af3017c77cf475524469f1c7ff421226c}
+\begin{DoxyVerb}
+override del metodo iterkeys invece dell'iteratore di dict ritorna la lista delle chiavi presenti nell'istanza di Odict
+@return [Object
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Odict_1_1Odict_a447733cd53020057a0142f815bce318b}{
+\index{mmasgis::Odict::Odict@{mmasgis::Odict::Odict}!order@{order}}
+\index{order@{order}!mmasgis::Odict::Odict@{mmasgis::Odict::Odict}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Odict::Odict::order}}}
+\label{classmmasgis_1_1Odict_1_1Odict_a447733cd53020057a0142f815bce318b}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Odict_8py}{Odict.py}\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\hypertarget{testquerytype_8py}{
+\section{testquerytype.py File Reference}
+\label{testquerytype_8py}\index{testquerytype.py@{testquerytype.py}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacemmasgis_1_1testquerytype}{mmasgis::testquerytype}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_a2f482d9b6e0f70da4d9472c97b636f26}{mmasgis::testquerytype::field2Type}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_a3e7a76663bda71c8d2ff7d58297c25a2}{mmasgis::testquerytype::tupleTranslation}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_a11d0973b49d800b782ea43e88d4577ec}{mmasgis::testquerytype::descriptionConverter}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_ab47581c5c5544e1f4a28e9185a308060}{mmasgis::testquerytype::test}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespacemmasgis_1_1testquerytype_add59df84ba27b1f13d5c8cd04a508a93}{mmasgis::testquerytype::my\_\-conv} = \{ FIELD\_\-TYPE.LONG: int \}
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_a0a6b3907a5d2aa5f9ed920af8ddee1f3}{mmasgis::testquerytype::cons} = cons()
+\item 
+dictionary \hyperlink{namespacemmasgis_1_1testquerytype_a2177e37b08c45fefce43557ea482df02}{mmasgis::testquerytype::field\_\-type}
+\item 
+string \hyperlink{namespacemmasgis_1_1testquerytype_af5ec20ce98eba724a388ca9bdf17af90}{mmasgis::testquerytype::tipo} = 'comune'
+\item 
+string \hyperlink{namespacemmasgis_1_1testquerytype_a2e593d719a194dc926a878eaa33846e1}{mmasgis::testquerytype::area} = 'giarre'
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_ab8ef45525ef14f1438ad57168a1419e7}{mmasgis::testquerytype::db} = MySQLdb.connect(host=\char`\"{}localhost\char`\"{}, user=\char`\"{}root\char`\"{}, passwd=\char`\"{}vilu7240\char`\"{},db=\char`\"{}parafarmacie\char`\"{})
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_a55ad3e8b85eed65ed1b5353795fecbd3}{mmasgis::testquerytype::crs} = db.cursor()
+\item 
+\hyperlink{namespacemmasgis_1_1testquerytype_aad7162e1d4ef85960e8f2982616b3db1}{mmasgis::testquerytype::description} = crs.description
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_af8b1b02c5ffcbeb1566fa0592598074f}{mmasgis::testquerytype::q} = crs.fetchone()
+\item 
+list \hyperlink{namespacemmasgis_1_1testquerytype_a9a0064269538b713487fc7407e3478ab}{mmasgis::testquerytype::types} = \mbox{[}type(col) for col in q\mbox{]}
+\end{DoxyCompactItemize}

@@ -1,0 +1,255 @@
+\hypertarget{classAlbero_1_1Tree_1_1Tree}{
+\section{Albero::Tree::Tree Class Reference}
+\label{classAlbero_1_1Tree_1_1Tree}\index{Albero::Tree::Tree@{Albero::Tree::Tree}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a1404233dba530fa3cde1a3e55c5037cb}{\_\-\_\-repr\_\-\_\-}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_ac14a4e381d22bc6ec0e26460997f57b9}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_ad4408c6beb8e74e5c249d277b16a3aea}{resetTree}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a46930260f6de704073f497bdaf50cf1c}{addComune}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_afd421cb896582eddae2cb99d14dd062e}{treeBuilder}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_aa4102efcf928a12c478faf33cb9e3335}{addCap}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a0c68c02fb31afbee825b4c3ce6152589}{addProvincia}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a7afd5fbab5db1c719c4a82a9efd8067e}{addRegione}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a26f5cddab2f64e173b713a2fc0c6aa2e}{getComune}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_ab1c74ce602a96cb814a4e602905033a5}{getCap}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_aca9a9b61e909074b7a00cf40380e89f6}{getProvincia}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a1020027b1406e35083243a70b3855175}{getRegione}
+\item 
+def \hyperlink{classAlbero_1_1Tree_1_1Tree_a5d1fddeaf3b14f105aa6d64fd0c7d33c}{childrenAdder}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlbero_1_1Tree_1_1Tree_af3f83504cf082249fb0c489774bf74f7}{cap}
+\item 
+\hyperlink{classAlbero_1_1Tree_1_1Tree_a7ac08ca8bb38d2c42b81fe515a51ae50}{comuni}
+\item 
+\hyperlink{classAlbero_1_1Tree_1_1Tree_a7f1a48821bdeac43b35b1da08a42c3a4}{provincie}
+\item 
+\hyperlink{classAlbero_1_1Tree_1_1Tree_a56d533d8193d33bbad99b964ee94e5b5}{regioni}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}implementa la struttura dell'albero dei territori, viene  popolato da mmasgis.py che ne invoca i metodi adder
+inoltre viene usata per popolare i dati predefiniti per la modifica dell'anagrafica
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_ac14a4e381d22bc6ec0e26460997f57b9}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_ac14a4e381d22bc6ec0e26460997f57b9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_a1404233dba530fa3cde1a3e55c5037cb}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a1404233dba530fa3cde1a3e55c5037cb}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_aa4102efcf928a12c478faf33cb9e3335}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!addCap@{addCap}}
+\index{addCap@{addCap}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{addCap}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::addCap (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_aa4102efcf928a12c478faf33cb9e3335}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_a46930260f6de704073f497bdaf50cf1c}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!addComune@{addComune}}
+\index{addComune@{addComune}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{addComune}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::addComune (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a46930260f6de704073f497bdaf50cf1c}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.comuni
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_a0c68c02fb31afbee825b4c3ce6152589}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!addProvincia@{addProvincia}}
+\index{addProvincia@{addProvincia}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{addProvincia}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::addProvincia (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a0c68c02fb31afbee825b4c3ce6152589}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.provincia
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_a7afd5fbab5db1c719c4a82a9efd8067e}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!addRegione@{addRegione}}
+\index{addRegione@{addRegione}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{addRegione}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::addRegione (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a7afd5fbab5db1c719c4a82a9efd8067e}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_a5d1fddeaf3b14f105aa6d64fd0c7d33c}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!childrenAdder@{childrenAdder}}
+\index{childrenAdder@{childrenAdder}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{childrenAdder}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::childrenAdder (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lf, }
+\item[{}]{lc}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a5d1fddeaf3b14f105aa6d64fd0c7d33c}
+\begin{DoxyVerb}aggiunge father nodi figli della seconda lista lc ai rispettivi nodi padre nella prima lista
+@param [Nodo]: lista contenente father nodi padre
+@param [Nodo]: lista contenente father nodi figli
+@return: [Nodo] lista dei nodi padre a cui sono stati aggiunti father figli  
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_ab1c74ce602a96cb814a4e602905033a5}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!getCap@{getCap}}
+\index{getCap@{getCap}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{getCap}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::getCap (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_ab1c74ce602a96cb814a4e602905033a5}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_a26f5cddab2f64e173b713a2fc0c6aa2e}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!getComune@{getComune}}
+\index{getComune@{getComune}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{getComune}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::getComune (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a26f5cddab2f64e173b713a2fc0c6aa2e}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.comuni
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_aca9a9b61e909074b7a00cf40380e89f6}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!getProvincia@{getProvincia}}
+\index{getProvincia@{getProvincia}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{getProvincia}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::getProvincia (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_aca9a9b61e909074b7a00cf40380e89f6}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.provincia
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_a1020027b1406e35083243a70b3855175}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!getRegione@{getRegione}}
+\index{getRegione@{getRegione}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{getRegione}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::getRegione (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_a1020027b1406e35083243a70b3855175}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_ad4408c6beb8e74e5c249d277b16a3aea}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!resetTree@{resetTree}}
+\index{resetTree@{resetTree}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{resetTree}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::resetTree (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_ad4408c6beb8e74e5c249d277b16a3aea}
+\begin{DoxyVerb}resetta l'istanza dell'albero
+svuotando le liste degli elementi
+self.cap, self.comuni,self.provincie
+self.regioni
+\end{DoxyVerb}
+ \hypertarget{classAlbero_1_1Tree_1_1Tree_afd421cb896582eddae2cb99d14dd062e}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!treeBuilder@{treeBuilder}}
+\index{treeBuilder@{treeBuilder}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{treeBuilder}]{\setlength{\rightskip}{0pt plus 5cm}def Albero::Tree::Tree::treeBuilder (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classAlbero_1_1Tree_1_1Tree_afd421cb896582eddae2cb99d14dd062e}
+\begin{DoxyVerb}
+combina i nodi  delle quattro liste in un unico albero
+ritorna i nodi delle regioni a cui sono stati aggiunti nodi delle provincie, dei comuni e dei cap
+@return: [Nodo]
+@precondition: fare attenzione che id e father_id siano consistenti tra le varie categorie
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_af3f83504cf082249fb0c489774bf74f7}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!cap@{cap}}
+\index{cap@{cap}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{cap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Albero::Tree::Tree::cap}}}
+\label{classAlbero_1_1Tree_1_1Tree_af3f83504cf082249fb0c489774bf74f7}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_a7ac08ca8bb38d2c42b81fe515a51ae50}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!comuni@{comuni}}
+\index{comuni@{comuni}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{comuni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Albero::Tree::Tree::comuni}}}
+\label{classAlbero_1_1Tree_1_1Tree_a7ac08ca8bb38d2c42b81fe515a51ae50}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_a7f1a48821bdeac43b35b1da08a42c3a4}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!provincie@{provincie}}
+\index{provincie@{provincie}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{provincie}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Albero::Tree::Tree::provincie}}}
+\label{classAlbero_1_1Tree_1_1Tree_a7f1a48821bdeac43b35b1da08a42c3a4}
+\hypertarget{classAlbero_1_1Tree_1_1Tree_a56d533d8193d33bbad99b964ee94e5b5}{
+\index{Albero::Tree::Tree@{Albero::Tree::Tree}!regioni@{regioni}}
+\index{regioni@{regioni}!Albero::Tree::Tree@{Albero::Tree::Tree}}
+\subsubsection[{regioni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Albero::Tree::Tree::regioni}}}
+\label{classAlbero_1_1Tree_1_1Tree_a56d533d8193d33bbad99b964ee94e5b5}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Tree_8py}{Tree.py}\end{DoxyCompactItemize}

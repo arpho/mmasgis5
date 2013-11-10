@@ -1,0 +1,270 @@
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement}{
+\section{mmasgis::EntityElements::EntityElement Class Reference}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement}\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a022545f2381b94187fb3ce52cee42657}{getHeader}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_ada9be649a0d09f1e3ac4ae77382020c7}{setMax}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a8ca777474440f072d0e7498ffb47e656}{fetchValue}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a14cb89c773b5eabe119b21d3719c34fa}{getHeaders}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_ada3ad2bca847116b4b0dd7152232ef3f}{getClassId}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a463cba2590abed27e2f8a71bcb4e63d5}{setClassId}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_aa190677c21e57d43f126f74d3a43f852}{getMax}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a15e4bf6873e8ab1ec9552b18e024e179}{setRequired}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a2d2f61f4598bf40c8c16b732d431f72e}{isRequired}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a783dc8cf51cb1ee047010c8cb3286ddd}{getId}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_ad170eeb5e21d293afa7fee3e7df19fbb}{setDb}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a4087b581041f8f15860bfdc573f20b53}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_aac7b7c7933050aa4d6b3b8d3b9b54d7e}{\_\-\_\-repr\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a58444248f21286d675200e8ddba22241}{max}
+\item 
+\hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a33e6a66eb4d7985c7c006e346df1fec9}{class\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a43d5dea07086b17ca68cb5796ee7ba25}{header}
+\item 
+\hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_ae276e4fbf7fc39527c032c4228daea28}{required}
+\item 
+\hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a244a7b0e3084bfae13d8b6e3f5065789}{db}
+\item 
+\hyperlink{classmmasgis_1_1EntityElements_1_1EntityElement_a9c56d11fcd1412af7ead9c43a27f92dd}{tab}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+questa classe rappresenta gli elementi di parametri e marche
+ visualizzabili nell'esportazione di un'angrafica
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a4087b581041f8f15860bfdc573f20b53}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{class\_\-id, }
+\item[{}]{tab, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a4087b581041f8f15860bfdc573f20b53}
+\begin{DoxyVerb}
+@param class_id:int rappresenta l'identificativo della classe dell'entita' sara' tc_clmar_id nel caso delle marche tc_clpar_id nel caso dei parametri
+@param header:string rappresenta l'intestazione che mostrera' la colonna esportata, viene preso direttamente dal db
+@param tab:string distingue se l'entita' e' un parametro o una marca i valori ammessi sono 'marche' e 'parametri'
+@attention: i valori ammessi sono quelli presenti nel db e corrispondenti al class_id settato, percio' si sconsiglia di settare direttamente questo parametro, ma di avvalersi di setClass_id
+che oltre a settare class_id, recupera dal db il corretto valore per lo header  
+
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_aac7b7c7933050aa4d6b3b8d3b9b54d7e}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_aac7b7c7933050aa4d6b3b8d3b9b54d7e}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a8ca777474440f072d0e7498ffb47e656}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!fetchValue@{fetchValue}}
+\index{fetchValue@{fetchValue}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{fetchValue}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::fetchValue (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a8ca777474440f072d0e7498ffb47e656}
+\begin{DoxyVerb}
+ritorna i primi self.max  valori relativi al class_id per un pv
+@param int:pv_id del pv
+@return: [string] 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_ada3ad2bca847116b4b0dd7152232ef3f}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!getClassId@{getClassId}}
+\index{getClassId@{getClassId}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{getClassId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::getClassId (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_ada3ad2bca847116b4b0dd7152232ef3f}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a022545f2381b94187fb3ce52cee42657}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{getHeader}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::getHeader (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a022545f2381b94187fb3ce52cee42657}
+\begin{DoxyVerb}
+getter di self.header
+@return string:header della colonna
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a14cb89c773b5eabe119b21d3719c34fa}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{getHeaders}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::getHeaders (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a14cb89c773b5eabe119b21d3719c34fa}
+\begin{DoxyVerb}
+ritorna gli header per marchi o parametri
+@return: [string]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a783dc8cf51cb1ee047010c8cb3286ddd}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!getId@{getId}}
+\index{getId@{getId}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{getId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::getId (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a783dc8cf51cb1ee047010c8cb3286ddd}
+\begin{DoxyVerb}
+getter di self.class_id, questo parametro e' usato come Id delle entita' configurabili
+@return: int:class_id
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_aa190677c21e57d43f126f74d3a43f852}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!getMax@{getMax}}
+\index{getMax@{getMax}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{getMax}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::getMax (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_aa190677c21e57d43f126f74d3a43f852}
+\begin{DoxyVerb}
+getter di self.max
+@return: int
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a2d2f61f4598bf40c8c16b732d431f72e}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!isRequired@{isRequired}}
+\index{isRequired@{isRequired}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{isRequired}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::isRequired (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a2d2f61f4598bf40c8c16b732d431f72e}
+\begin{DoxyVerb}
+getter per self.required
+@return: bool
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a463cba2590abed27e2f8a71bcb4e63d5}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!setClassId@{setClassId}}
+\index{setClassId@{setClassId}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{setClassId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::setClassId (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a463cba2590abed27e2f8a71bcb4e63d5}
+\begin{DoxyVerb}
+setter di class_id
+si occupa di settare il valore appropriato dello header
+@param int:class_id puo' essere tc_clmar_id o tc_clpar_id
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_ad170eeb5e21d293afa7fee3e7df19fbb}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!setDb@{setDb}}
+\index{setDb@{setDb}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{setDb}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::setDb (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_ad170eeb5e21d293afa7fee3e7df19fbb}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_ada9be649a0d09f1e3ac4ae77382020c7}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!setMax@{setMax}}
+\index{setMax@{setMax}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{setMax}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::setMax (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_ada9be649a0d09f1e3ac4ae77382020c7}
+\begin{DoxyVerb}rappresenta il massimo numero elementi visualizzabili per class_id: il valore di default e' 1, in quanto per ogni parametro e' sufficiente visualizzare un solo valore, mentre per le marche in genere vengono richiesti piu' risultati
+@param int:
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a15e4bf6873e8ab1ec9552b18e024e179}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!setRequired@{setRequired}}
+\index{setRequired@{setRequired}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{setRequired}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::EntityElements::EntityElement::setRequired (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a15e4bf6873e8ab1ec9552b18e024e179}
+\begin{DoxyVerb}
+setter per self.required
+@param bool:
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a33e6a66eb4d7985c7c006e346df1fec9}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!class\_\-id@{class\_\-id}}
+\index{class\_\-id@{class\_\-id}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{class\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::EntityElements::EntityElement::class\_\-id}}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a33e6a66eb4d7985c7c006e346df1fec9}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a244a7b0e3084bfae13d8b6e3f5065789}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!db@{db}}
+\index{db@{db}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::EntityElements::EntityElement::db}}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a244a7b0e3084bfae13d8b6e3f5065789}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a43d5dea07086b17ca68cb5796ee7ba25}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!header@{header}}
+\index{header@{header}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::EntityElements::EntityElement::header}}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a43d5dea07086b17ca68cb5796ee7ba25}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a58444248f21286d675200e8ddba22241}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!max@{max}}
+\index{max@{max}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::EntityElements::EntityElement::max}}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a58444248f21286d675200e8ddba22241}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_ae276e4fbf7fc39527c032c4228daea28}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!required@{required}}
+\index{required@{required}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{required}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::EntityElements::EntityElement::required}}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_ae276e4fbf7fc39527c032c4228daea28}
+\hypertarget{classmmasgis_1_1EntityElements_1_1EntityElement_a9c56d11fcd1412af7ead9c43a27f92dd}{
+\index{mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}!tab@{tab}}
+\index{tab@{tab}!mmasgis::EntityElements::EntityElement@{mmasgis::EntityElements::EntityElement}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::EntityElements::EntityElement::tab}}}
+\label{classmmasgis_1_1EntityElements_1_1EntityElement_a9c56d11fcd1412af7ead9c43a27f92dd}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{EntityElements_8py}{EntityElements.py}\end{DoxyCompactItemize}

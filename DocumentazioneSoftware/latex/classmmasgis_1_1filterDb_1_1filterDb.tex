@@ -1,0 +1,184 @@
+\hypertarget{classmmasgis_1_1filterDb_1_1filterDb}{
+\section{mmasgis::filterDb::filterDb Class Reference}
+\label{classmmasgis_1_1filterDb_1_1filterDb}\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a454ac2a207334ed58dfd4e926bae613e}{checkParameter}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a263f7d5245d91b81bd7c4c25b0188b2b}{checkPotential}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a275775e934063e23e96be6f2e4ed2508}{checkBrand}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a82bf0d588278b10cf0f3df354ebee17c}{checkClassParameter}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a5ad0b32d554293bd9f79ca082f945eb7}{checkClassPotential}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a2092be7a5c6ab1fb54df92353d07a313}{checkClassBrand}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a5d97442632095c15a2c69be8ffd6657f}{initDB}
+\item 
+def \hyperlink{classmmasgis_1_1filterDb_1_1filterDb_a75d47b1f30fb6a3232d88656ef04e326}{\_\-\_\-init\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1filterDb_1_1filterDb_ad93529109045c7cf257066090a8aefe7}{session}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a75d47b1f30fb6a3232d88656ef04e326}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a75d47b1f30fb6a3232d88656ef04e326}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a275775e934063e23e96be6f2e4ed2508}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!checkBrand@{checkBrand}}
+\index{checkBrand@{checkBrand}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{checkBrand}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::checkBrand (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id, }
+\item[{}]{brand\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a275775e934063e23e96be6f2e4ed2508}
+\begin{DoxyVerb}
+verifica che il potenziale (class_id,potential_id) sia presente per il pv Id
+@param Id::int pv_id
+@param (class_id,parameter_id)::(int,int) rispettivamente  id della claasse e del parametro
+@return: boolean  
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a2092be7a5c6ab1fb54df92353d07a313}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!checkClassBrand@{checkClassBrand}}
+\index{checkClassBrand@{checkClassBrand}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{checkClassBrand}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::checkClassBrand (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a2092be7a5c6ab1fb54df92353d07a313}
+\begin{DoxyVerb}
+verifica che se almeno uno dei brands della classe class_id contenuti nella lista l appartenga al pv
+facendo uso di checkBrand
+@param Id::int pv_id
+@param class_id::int id della classe potenziale
+@param [int]:: [brand_id] lista di potenziali da analizzare
+@return: boolean 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a82bf0d588278b10cf0f3df354ebee17c}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!checkClassParameter@{checkClassParameter}}
+\index{checkClassParameter@{checkClassParameter}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{checkClassParameter}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::checkClassParameter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a82bf0d588278b10cf0f3df354ebee17c}
+\begin{DoxyVerb}
+verifica che se almeno uno dei parametri della classe class_id contenuti nella lista l appartenga al pv
+facendo uso di checkParameter
+@param Id::int pv_id
+@param class_id::int id della classe parametro
+@param [int]:: [parameter_id] lista di parametri da analizzare
+@return: boolean 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a5ad0b32d554293bd9f79ca082f945eb7}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!checkClassPotential@{checkClassPotential}}
+\index{checkClassPotential@{checkClassPotential}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{checkClassPotential}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::checkClassPotential (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a5ad0b32d554293bd9f79ca082f945eb7}
+\begin{DoxyVerb}
+verifica che se almeno uno dei potenziali della classe class_id contenuti nella lista l appartenga al pv
+facendo uso di checkPotential
+@param Id::int pv_id
+@param class_id::int id della classe potenziale
+@param [int]:: [parameter_id] lista di potenziali da analizzare
+@return: boolean 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a454ac2a207334ed58dfd4e926bae613e}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!checkParameter@{checkParameter}}
+\index{checkParameter@{checkParameter}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{checkParameter}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::checkParameter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id, }
+\item[{}]{parameter\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a454ac2a207334ed58dfd4e926bae613e}
+\begin{DoxyVerb}
+verifica che il parametro (class_id,parameter_id) sia presente per il pv Id
+@param Id::int pv_id
+@param (class_id,parameter_id)::(int,int) rispettivamente  id della claasse e del parametro
+@return: boolean  
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a263f7d5245d91b81bd7c4c25b0188b2b}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!checkPotential@{checkPotential}}
+\index{checkPotential@{checkPotential}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{checkPotential}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::checkPotential (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{class\_\-id, }
+\item[{}]{potential\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a263f7d5245d91b81bd7c4c25b0188b2b}
+\begin{DoxyVerb}
+verifica che il potenziale (class_id,potential_id) sia presente per il pv Id
+@param Id::int pv_id
+@param (class_id,parameter_id)::(int,int) rispettivamente  id della claasse e del parametro
+@return: boolean  
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1filterDb_1_1filterDb_a5d97442632095c15a2c69be8ffd6657f}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!initDB@{initDB}}
+\index{initDB@{initDB}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{initDB}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::filterDb::filterDb::initDB (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dbfile}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_a5d97442632095c15a2c69be8ffd6657f}
+\begin{DoxyVerb}
+@param string:stringa di connessione al db, con il seguente formato di stringa "user:pwd@host/nomedb" esempio root:xxxxx@localhost/parafarmacie
+inizializza il db
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1filterDb_1_1filterDb_ad93529109045c7cf257066090a8aefe7}{
+\index{mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}!session@{session}}
+\index{session@{session}!mmasgis::filterDb::filterDb@{mmasgis::filterDb::filterDb}}
+\subsubsection[{session}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::filterDb::filterDb::session}}}
+\label{classmmasgis_1_1filterDb_1_1filterDb_ad93529109045c7cf257066090a8aefe7}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{filterDb_8py}{filterDb.py}\end{DoxyCompactItemize}

@@ -1,0 +1,161 @@
+\hypertarget{classmmasgis_1_1Filter_1_1Filter}{
+\section{mmasgis::Filter::Filter Class Reference}
+\label{classmmasgis_1_1Filter_1_1Filter}\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Filter_1_1Filter_aa286331e2f7ea07b388ef2e80bb7f19d}{\_\-\_\-repr\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Filter_1_1Filter_a09c5ab11d9ca8ad6cf82c116903dc766}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Filter_1_1Filter_a3a749922f6fafac6754f721a7bbe1385}{unpackParameter}
+\item 
+def \hyperlink{classmmasgis_1_1Filter_1_1Filter_a62594f25ca5126737af8eb0fa9941c0c}{save}
+\item 
+def \hyperlink{classmmasgis_1_1Filter_1_1Filter_a54b15fff49eee15194c015a94a654e8f}{test}
+\item 
+def \hyperlink{classmmasgis_1_1Filter_1_1Filter_a3a3258ebcde4ce2f9509bb4f5bdd9da0}{checkTab}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Filter_1_1Filter_a12729c4683da208f75a21ad58cc19be5}{db}
+\item 
+\hyperlink{classmmasgis_1_1Filter_1_1Filter_a2a2eee1ab8629d4d4d7a7f584d1f6e58}{Dbquery}
+\item 
+\hyperlink{classmmasgis_1_1Filter_1_1Filter_a3fd36908d325f1493eb8460c431e8ae5}{parameters}
+\item 
+\hyperlink{classmmasgis_1_1Filter_1_1Filter_adedd3507f6aded578277cb77c8444ee4}{tab}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+permette di definire una serie di condizioni che il pv deve soddisfare, il metodo test applicato
+sul singolo pv verifica che questo le rispetti, in particolare la logica dei filtri prevede che
+piu' parametri della stessa classe siano  in OR mentre parametri di classi differenti devono
+essere in AND
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_a09c5ab11d9ca8ad6cf82c116903dc766}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Filter::Filter::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parametri, }
+\item[{}]{tab, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Filter_1_1Filter_a09c5ab11d9ca8ad6cf82c116903dc766}
+\begin{DoxyVerb}
+@param parametri: [{int:[int]}]::[{class_id:[parameter_id]}] setting del filtro
+@param tab: string chiave del Filtro
+@param db:queriesDb, stessa istanza di QueriesDb usata da interrogazioni savequery e loadQuery 
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_aa286331e2f7ea07b388ef2e80bb7f19d}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Filter::Filter::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Filter_1_1Filter_aa286331e2f7ea07b388ef2e80bb7f19d}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_a3a3258ebcde4ce2f9509bb4f5bdd9da0}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!checkTab@{checkTab}}
+\index{checkTab@{checkTab}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{checkTab}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Filter::Filter::checkTab (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id, }
+\item[{}]{tab, }
+\item[{}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Filter_1_1Filter_a3a3258ebcde4ce2f9509bb4f5bdd9da0}
+\begin{DoxyVerb}
+esegue i filtri appartenenti ad un tab
+@param Id::int pv_id
+@param tab:string specifica il tab di cui eseguire i filtri 'marchi',parametri','potenziali'
+@param d:{int:[int]}::{class_id:[parameter_id]} 
+@return boolean: il valore ritornato e' l'operazione di AND tra i check per ogni classe
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Filter_1_1Filter_a62594f25ca5126737af8eb0fa9941c0c}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!save@{save}}
+\index{save@{save}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Filter::Filter::save (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Filter_1_1Filter_a62594f25ca5126737af8eb0fa9941c0c}
+\begin{DoxyVerb}
+salva i parametri del filtro sul dbusando come chiave esterna lo id della query
+@param Id:int:: query_id
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Filter_1_1Filter_a54b15fff49eee15194c015a94a654e8f}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!test@{test}}
+\index{test@{test}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Filter::Filter::test (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Filter_1_1Filter_a54b15fff49eee15194c015a94a654e8f}
+\begin{DoxyVerb}
+esegue il test definito dai parametri del filtro sul pv con pv_id Id
+@param Id::int pv_id
+@return boolean 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Filter_1_1Filter_a3a749922f6fafac6754f721a7bbe1385}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!unpackParameter@{unpackParameter}}
+\index{unpackParameter@{unpackParameter}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{unpackParameter}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Filter::Filter::unpackParameter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Filter_1_1Filter_a3a749922f6fafac6754f721a7bbe1385}
+\begin{DoxyVerb}ritorna una versione dei parametri del filtro "scompattata", cioe' nel formato[(int,int)]::[(category_id,parameter_id)],
+perche' sia compatibile con le funzioni di queriesDb
+@return: [(int,int)]::[(category_id,parameter_id)]
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_a12729c4683da208f75a21ad58cc19be5}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!db@{db}}
+\index{db@{db}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Filter::Filter::db}}}
+\label{classmmasgis_1_1Filter_1_1Filter_a12729c4683da208f75a21ad58cc19be5}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_a2a2eee1ab8629d4d4d7a7f584d1f6e58}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!Dbquery@{Dbquery}}
+\index{Dbquery@{Dbquery}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{Dbquery}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Filter::Filter::Dbquery}}}
+\label{classmmasgis_1_1Filter_1_1Filter_a2a2eee1ab8629d4d4d7a7f584d1f6e58}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_a3fd36908d325f1493eb8460c431e8ae5}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!parameters@{parameters}}
+\index{parameters@{parameters}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Filter::Filter::parameters}}}
+\label{classmmasgis_1_1Filter_1_1Filter_a3fd36908d325f1493eb8460c431e8ae5}
+\hypertarget{classmmasgis_1_1Filter_1_1Filter_adedd3507f6aded578277cb77c8444ee4}{
+\index{mmasgis::Filter::Filter@{mmasgis::Filter::Filter}!tab@{tab}}
+\index{tab@{tab}!mmasgis::Filter::Filter@{mmasgis::Filter::Filter}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Filter::Filter::tab}}}
+\label{classmmasgis_1_1Filter_1_1Filter_adedd3507f6aded578277cb77c8444ee4}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Filter_8py}{Filter.py}\end{DoxyCompactItemize}

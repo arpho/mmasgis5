@@ -1,0 +1,197 @@
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione}{
+\section{mmasgis::configurazione::WindowConfigurazione Class Reference}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione}\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+}
+Inheritance diagram for mmasgis::configurazione::WindowConfigurazione:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmmasgis_1_1configurazione_1_1WindowConfigurazione}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_af361d8b1a025cb411d2ed6f095333d8e}{insertRow}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a363b8e7f06d1052e63b5f25f55ecd1bf}{resetList}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a2d2babcb0139e2a522e4cbc2b29a0649}{lookEntity4Id}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a3808ee5580984ff6b36083c2b85ef3dd}{updateLists}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a7e47f6a53003551d8bb801a96579d251}{on\_\-table\_\-disp\_\-itemClicked}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a54d6bbc3661339ed8cc4c350828c6a5b}{on\_\-table\_\-sel\_\-itemClicked}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_aaef47ffd20b7c68441bbe9d4a827ce51}{on\_\-apply\_\-conf\_\-released}
+\item 
+def \hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_ab50db3cb5c54a23834c8f1baad1c4cd1}{\_\-\_\-init\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a1480d13b8fb710f911313536ae539ea2}{tab}
+\item 
+\hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a73e0e9b7475865acaa9067c9386ecff7}{entity}
+\item 
+\hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a5f5d109f9422be403a9be457203c2e21}{configurator}
+\item 
+\hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_ad0dfca362c3b3bfb2f80ac4372840c6e}{w}
+\item 
+\hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a8de73e16feaf9b02a11d9088118c303e}{db}
+\item 
+\hyperlink{classmmasgis_1_1configurazione_1_1WindowConfigurazione_af29f1d6a1ae8cd041ac55defa5c4daac}{elementsList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_ab50db3cb5c54a23834c8f1baad1c4cd1}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{tab, }
+\item[{}]{c, }
+\item[{}]{e, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_ab50db3cb5c54a23834c8f1baad1c4cd1}
+\begin{DoxyVerb}
+inizializza la gui di configurazione delle entita'
+@param string: classe o tab di appartenenza dell'entita' <'MARCHE'><'PARAMETRI'>
+@param Configurator:i
+@note: il valore del tab fa si che il testo delle entichette sopra le due liste sia adeguato all'entita'  
+inoltre la casella per la selezione del numero max di marche e' visibile esclusivamente se tab ='marche'
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_af361d8b1a025cb411d2ed6f095333d8e}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!insertRow@{insertRow}}
+\index{insertRow@{insertRow}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{insertRow}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::insertRow (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{table, }
+\item[{}]{txt, }
+\item[{}]{Id, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_af361d8b1a025cb411d2ed6f095333d8e}
+\begin{DoxyVerb}
+inserisce una riga in una tabella
+@param QTableWidget:table tabella cui si vuole aggiungere una riga
+@param string: testo da inserire nella colonna
+@param int: n posizione nella riga in cui inserire lo item 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a2d2babcb0139e2a522e4cbc2b29a0649}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!lookEntity4Id@{lookEntity4Id}}
+\index{lookEntity4Id@{lookEntity4Id}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{lookEntity4Id}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::lookEntity4Id (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a2d2babcb0139e2a522e4cbc2b29a0649}
+\begin{DoxyVerb}
+ritorna l'entita' relativa allo id passato
+@param int:
+@return: Entity
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_aaef47ffd20b7c68441bbe9d4a827ce51}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!on\_\-apply\_\-conf\_\-released@{on\_\-apply\_\-conf\_\-released}}
+\index{on\_\-apply\_\-conf\_\-released@{on\_\-apply\_\-conf\_\-released}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{on\_\-apply\_\-conf\_\-released}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::on\_\-apply\_\-conf\_\-released (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_aaef47ffd20b7c68441bbe9d4a827ce51}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a7e47f6a53003551d8bb801a96579d251}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!on\_\-table\_\-disp\_\-itemClicked@{on\_\-table\_\-disp\_\-itemClicked}}
+\index{on\_\-table\_\-disp\_\-itemClicked@{on\_\-table\_\-disp\_\-itemClicked}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{on\_\-table\_\-disp\_\-itemClicked}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::on\_\-table\_\-disp\_\-itemClicked (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{item}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a7e47f6a53003551d8bb801a96579d251}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a54d6bbc3661339ed8cc4c350828c6a5b}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!on\_\-table\_\-sel\_\-itemClicked@{on\_\-table\_\-sel\_\-itemClicked}}
+\index{on\_\-table\_\-sel\_\-itemClicked@{on\_\-table\_\-sel\_\-itemClicked}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{on\_\-table\_\-sel\_\-itemClicked}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::on\_\-table\_\-sel\_\-itemClicked (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{item}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a54d6bbc3661339ed8cc4c350828c6a5b}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a363b8e7f06d1052e63b5f25f55ecd1bf}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!resetList@{resetList}}
+\index{resetList@{resetList}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{resetList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::resetList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a363b8e7f06d1052e63b5f25f55ecd1bf}
+\begin{DoxyVerb}
+resetta le due liste
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a3808ee5580984ff6b36083c2b85ef3dd}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!updateLists@{updateLists}}
+\index{updateLists@{updateLists}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{updateLists}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::configurazione::WindowConfigurazione::updateLists (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a3808ee5580984ff6b36083c2b85ef3dd}
+\begin{DoxyVerb}
+aggiorna l'elenco delle due liste
+scorre self.elementsList gli elementi in cui  il campo required e' settato a False sono  visualizzati nella prima lista
+gli altri nella seconda
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a5f5d109f9422be403a9be457203c2e21}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!configurator@{configurator}}
+\index{configurator@{configurator}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{configurator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::configurazione::WindowConfigurazione::configurator}}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a5f5d109f9422be403a9be457203c2e21}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a8de73e16feaf9b02a11d9088118c303e}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!db@{db}}
+\index{db@{db}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::configurazione::WindowConfigurazione::db}}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a8de73e16feaf9b02a11d9088118c303e}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_af29f1d6a1ae8cd041ac55defa5c4daac}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!elementsList@{elementsList}}
+\index{elementsList@{elementsList}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{elementsList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::configurazione::WindowConfigurazione::elementsList}}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_af29f1d6a1ae8cd041ac55defa5c4daac}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a73e0e9b7475865acaa9067c9386ecff7}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!entity@{entity}}
+\index{entity@{entity}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::configurazione::WindowConfigurazione::entity}}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a73e0e9b7475865acaa9067c9386ecff7}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a1480d13b8fb710f911313536ae539ea2}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!tab@{tab}}
+\index{tab@{tab}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::configurazione::WindowConfigurazione::tab}}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_a1480d13b8fb710f911313536ae539ea2}
+\hypertarget{classmmasgis_1_1configurazione_1_1WindowConfigurazione_ad0dfca362c3b3bfb2f80ac4372840c6e}{
+\index{mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}!w@{w}}
+\index{w@{w}!mmasgis::configurazione::WindowConfigurazione@{mmasgis::configurazione::WindowConfigurazione}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::configurazione::WindowConfigurazione::w}}}
+\label{classmmasgis_1_1configurazione_1_1WindowConfigurazione_ad0dfca362c3b3bfb2f80ac4372840c6e}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{configurazione_8py}{configurazione.py}\end{DoxyCompactItemize}

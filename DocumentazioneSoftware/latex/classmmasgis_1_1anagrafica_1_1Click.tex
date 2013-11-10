@@ -1,0 +1,85 @@
+\hypertarget{classmmasgis_1_1anagrafica_1_1Click}{
+\section{mmasgis::anagrafica::Click Class Reference}
+\label{classmmasgis_1_1anagrafica_1_1Click}\index{mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1anagrafica_1_1Click_aafa2a1e55f9ee39e80c63e5bd1e5c1ef}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1anagrafica_1_1Click_a7424e0b7d24e93fab3cd69277c1196b5}{click}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1anagrafica_1_1Click_ad42df0a202340a69ad009068d360d006}{started}
+\item 
+\hyperlink{classmmasgis_1_1anagrafica_1_1Click_a7d313410095a4552b247fe70b99c442f}{start}
+\item 
+\hyperlink{classmmasgis_1_1anagrafica_1_1Click_a8a95c44c19f799cc8082faae9331c566}{end}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+ questa classe implementa un timer
+ per risolvere un problema sui tasti di navigazione di anagrafica, sono troppo sensibili  e sulla lista dei risultati avanza a 2 alla volta
+ questo problema e' sorto dopo aver sostituito i QPushButton con dei QAction all'interno della toolbar
+ il costruttore e' un costruttore standard, non richiede nessun parametro
+ @param started: boolean registra lo stato del timer se lanciato e' True, altrimenti e' False
+ @param start: float memorizza il timestamp in cui il timer viene lanciato
+ @param end:float memorizza il temestamp in cui viene fermato il timer   
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1anagrafica_1_1Click_aafa2a1e55f9ee39e80c63e5bd1e5c1ef}{
+\index{mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::anagrafica::Click::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1anagrafica_1_1Click_aafa2a1e55f9ee39e80c63e5bd1e5c1ef}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1anagrafica_1_1Click_a7424e0b7d24e93fab3cd69277c1196b5}{
+\index{mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}!click@{click}}
+\index{click@{click}!mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}}
+\subsubsection[{click}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::anagrafica::Click::click (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1anagrafica_1_1Click_a7424e0b7d24e93fab3cd69277c1196b5}
+\begin{DoxyVerb}
+lancia il timer e lo resetta ogni volta che viene invocato 
+@param t:int timeout del click o meglio soglia di tempo al di sotto della quale non si vuole percepire il click sul pulsante e il metodo ritornera' False
+@return boolean:True al primo avvio e se self.end-self.start>t  
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1anagrafica_1_1Click_a8a95c44c19f799cc8082faae9331c566}{
+\index{mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}!end@{end}}
+\index{end@{end}!mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::anagrafica::Click::end}}}
+\label{classmmasgis_1_1anagrafica_1_1Click_a8a95c44c19f799cc8082faae9331c566}
+\hypertarget{classmmasgis_1_1anagrafica_1_1Click_a7d313410095a4552b247fe70b99c442f}{
+\index{mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}!start@{start}}
+\index{start@{start}!mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::anagrafica::Click::start}}}
+\label{classmmasgis_1_1anagrafica_1_1Click_a7d313410095a4552b247fe70b99c442f}
+\hypertarget{classmmasgis_1_1anagrafica_1_1Click_ad42df0a202340a69ad009068d360d006}{
+\index{mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}!started@{started}}
+\index{started@{started}!mmasgis::anagrafica::Click@{mmasgis::anagrafica::Click}}
+\subsubsection[{started}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::anagrafica::Click::started}}}
+\label{classmmasgis_1_1anagrafica_1_1Click_ad42df0a202340a69ad009068d360d006}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{anagrafica_8py}{anagrafica.py}\end{DoxyCompactItemize}

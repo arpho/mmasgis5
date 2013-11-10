@@ -1,0 +1,127 @@
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro}{
+\section{mmasgis::sqlAlchemyQueryClass::Parametro Class Reference}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro}\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a223b229e03c5c414dcd42b77c357dbfd}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a6e811821f8d07bd41c9137a95e50f86a}{\_\-\_\-repr\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a9b2d3ac13e1cf4e76fdfd20ee5294e99}{category}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a120d8827ed68af3c6314efbf5b06d036}{parametro\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a331133b30c1267ce7fe6c652cda810ef}{query\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a27bb100b132e671d5b110bd09dbef32a}{id} = Column(Integer, primary\_\-key=True)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a69d4ac4b7a7caad6c1f6bc929419822f}{parametro\_\-id} = Column(Integer)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_aad09537d22a98d598f86ced16f08110e}{category} = Column(Integer)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_ae7ad55cbc3b1cf794e84b22dca040122}{query\_\-id} = Column(Integer, ForeignKey('queries.id'))
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_abc6071696bfdd0160b1c56c68766dcb0}{user} = relation(\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Query}{Query}, backref=backref('parametri\_\-mmas', order\_\-by=\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a27bb100b132e671d5b110bd09dbef32a}{id}))
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a49be94abaab6193b729b727a96d7078a}{\_\-\_\-tablename\_\-\_\-} = \char`\"{}parametri\_\-mmas\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+Address Class
+ 
+Create some class properties before initilization
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a223b229e03c5c414dcd42b77c357dbfd}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::sqlAlchemyQueryClass::Parametro::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{query, }
+\item[{}]{category, }
+\item[{}]{parametro\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a223b229e03c5c414dcd42b77c357dbfd}
+\begin{DoxyVerb}Constructor\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a6e811821f8d07bd41c9137a95e50f86a}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::sqlAlchemyQueryClass::Parametro::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a6e811821f8d07bd41c9137a95e50f86a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a49be94abaab6193b729b727a96d7078a}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!\_\-\_\-tablename\_\-\_\-@{\_\-\_\-tablename\_\-\_\-}}
+\index{\_\-\_\-tablename\_\-\_\-@{\_\-\_\-tablename\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{\_\-\_\-tablename\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf mmasgis::sqlAlchemyQueryClass::Parametro::\_\-\_\-tablename\_\-\_\-} = \char`\"{}parametri\_\-mmas\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a49be94abaab6193b729b727a96d7078a}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_aad09537d22a98d598f86ced16f08110e}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!category@{category}}
+\index{category@{category}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{category}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Parametro::category} = Column(Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_aad09537d22a98d598f86ced16f08110e}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a9b2d3ac13e1cf4e76fdfd20ee5294e99}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!category@{category}}
+\index{category@{category}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{category}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Parametro::category}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a9b2d3ac13e1cf4e76fdfd20ee5294e99}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a27bb100b132e671d5b110bd09dbef32a}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!id@{id}}
+\index{id@{id}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Parametro::id} = Column(Integer, primary\_\-key=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a27bb100b132e671d5b110bd09dbef32a}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a120d8827ed68af3c6314efbf5b06d036}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!parametro\_\-id@{parametro\_\-id}}
+\index{parametro\_\-id@{parametro\_\-id}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{parametro\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Parametro::parametro\_\-id}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a120d8827ed68af3c6314efbf5b06d036}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a69d4ac4b7a7caad6c1f6bc929419822f}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!parametro\_\-id@{parametro\_\-id}}
+\index{parametro\_\-id@{parametro\_\-id}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{parametro\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Parametro::parametro\_\-id} = Column(Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a69d4ac4b7a7caad6c1f6bc929419822f}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a331133b30c1267ce7fe6c652cda810ef}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!query\_\-id@{query\_\-id}}
+\index{query\_\-id@{query\_\-id}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{query\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Parametro::query\_\-id}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_a331133b30c1267ce7fe6c652cda810ef}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_ae7ad55cbc3b1cf794e84b22dca040122}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!query\_\-id@{query\_\-id}}
+\index{query\_\-id@{query\_\-id}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{query\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Parametro::query\_\-id} = Column(Integer, ForeignKey('queries.id'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_ae7ad55cbc3b1cf794e84b22dca040122}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_abc6071696bfdd0160b1c56c68766dcb0}{
+\index{mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}!user@{user}}
+\index{user@{user}!mmasgis::sqlAlchemyQueryClass::Parametro@{mmasgis::sqlAlchemyQueryClass::Parametro}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Parametro::user} = relation({\bf Query}, backref=backref('parametri\_\-mmas', order\_\-by={\bf id}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Parametro_abc6071696bfdd0160b1c56c68766dcb0}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sqlAlchemyQueryClass_8py}{sqlAlchemyQueryClass.py}\end{DoxyCompactItemize}

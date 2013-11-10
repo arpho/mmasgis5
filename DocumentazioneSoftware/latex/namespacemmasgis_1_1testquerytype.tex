@@ -1,0 +1,130 @@
+\hypertarget{namespacemmasgis_1_1testquerytype}{
+\section{mmasgis::testquerytype Namespace Reference}
+\label{namespacemmasgis_1_1testquerytype}\index{mmasgis::testquerytype@{mmasgis::testquerytype}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_a2f482d9b6e0f70da4d9472c97b636f26}{field2Type}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_a3e7a76663bda71c8d2ff7d58297c25a2}{tupleTranslation}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_a11d0973b49d800b782ea43e88d4577ec}{descriptionConverter}
+\item 
+def \hyperlink{namespacemmasgis_1_1testquerytype_ab47581c5c5544e1f4a28e9185a308060}{test}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespacemmasgis_1_1testquerytype_add59df84ba27b1f13d5c8cd04a508a93}{my\_\-conv} = \{ FIELD\_\-TYPE.LONG: int \}
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_a0a6b3907a5d2aa5f9ed920af8ddee1f3}{cons} = \hyperlink{namespacemmasgis_1_1testquerytype_a0a6b3907a5d2aa5f9ed920af8ddee1f3}{cons}()
+\item 
+dictionary \hyperlink{namespacemmasgis_1_1testquerytype_a2177e37b08c45fefce43557ea482df02}{field\_\-type}
+\item 
+string \hyperlink{namespacemmasgis_1_1testquerytype_af5ec20ce98eba724a388ca9bdf17af90}{tipo} = 'comune'
+\item 
+string \hyperlink{namespacemmasgis_1_1testquerytype_a2e593d719a194dc926a878eaa33846e1}{area} = 'giarre'
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_ab8ef45525ef14f1438ad57168a1419e7}{db} = MySQLdb.connect(host=\char`\"{}localhost\char`\"{}, user=\char`\"{}root\char`\"{}, passwd=\char`\"{}vilu7240\char`\"{},db=\char`\"{}parafarmacie\char`\"{})
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_a55ad3e8b85eed65ed1b5353795fecbd3}{crs} = db.cursor()
+\item 
+\hyperlink{namespacemmasgis_1_1testquerytype_aad7162e1d4ef85960e8f2982616b3db1}{description} = crs.description
+\item 
+tuple \hyperlink{namespacemmasgis_1_1testquerytype_af8b1b02c5ffcbeb1566fa0592598074f}{q} = crs.fetchone()
+\item 
+list \hyperlink{namespacemmasgis_1_1testquerytype_a9a0064269538b713487fc7407e3478ab}{types} = \mbox{[}type(col) for col in \hyperlink{namespacemmasgis_1_1testquerytype_af8b1b02c5ffcbeb1566fa0592598074f}{q}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacemmasgis_1_1testquerytype_a11d0973b49d800b782ea43e88d4577ec}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!descriptionConverter@{descriptionConverter}}
+\index{descriptionConverter@{descriptionConverter}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{descriptionConverter}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::testquerytype::descriptionConverter (
+\begin{DoxyParamCaption}
+\item[{}]{rs}
+\end{DoxyParamCaption}
+)}}
+\label{namespacemmasgis_1_1testquerytype_a11d0973b49d800b782ea43e88d4577ec}
+\hypertarget{namespacemmasgis_1_1testquerytype_a2f482d9b6e0f70da4d9472c97b636f26}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!field2Type@{field2Type}}
+\index{field2Type@{field2Type}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{field2Type}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::testquerytype::field2Type (
+\begin{DoxyParamCaption}
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{namespacemmasgis_1_1testquerytype_a2f482d9b6e0f70da4d9472c97b636f26}
+\hypertarget{namespacemmasgis_1_1testquerytype_ab47581c5c5544e1f4a28e9185a308060}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!test@{test}}
+\index{test@{test}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::testquerytype::test (
+\begin{DoxyParamCaption}
+\item[{}]{crs}
+\end{DoxyParamCaption}
+)}}
+\label{namespacemmasgis_1_1testquerytype_ab47581c5c5544e1f4a28e9185a308060}
+\hypertarget{namespacemmasgis_1_1testquerytype_a3e7a76663bda71c8d2ff7d58297c25a2}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!tupleTranslation@{tupleTranslation}}
+\index{tupleTranslation@{tupleTranslation}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{tupleTranslation}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::testquerytype::tupleTranslation (
+\begin{DoxyParamCaption}
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{namespacemmasgis_1_1testquerytype_a3e7a76663bda71c8d2ff7d58297c25a2}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacemmasgis_1_1testquerytype_a2e593d719a194dc926a878eaa33846e1}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!area@{area}}
+\index{area@{area}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{area}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf mmasgis::testquerytype::area} = 'giarre'}}
+\label{namespacemmasgis_1_1testquerytype_a2e593d719a194dc926a878eaa33846e1}
+\hypertarget{namespacemmasgis_1_1testquerytype_a0a6b3907a5d2aa5f9ed920af8ddee1f3}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!cons@{cons}}
+\index{cons@{cons}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{cons}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::testquerytype::cons} = {\bf cons}()}}
+\label{namespacemmasgis_1_1testquerytype_a0a6b3907a5d2aa5f9ed920af8ddee1f3}
+\hypertarget{namespacemmasgis_1_1testquerytype_a55ad3e8b85eed65ed1b5353795fecbd3}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!crs@{crs}}
+\index{crs@{crs}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{crs}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::testquerytype::crs} = db.cursor()}}
+\label{namespacemmasgis_1_1testquerytype_a55ad3e8b85eed65ed1b5353795fecbd3}
+\hypertarget{namespacemmasgis_1_1testquerytype_ab8ef45525ef14f1438ad57168a1419e7}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!db@{db}}
+\index{db@{db}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::testquerytype::db} = MySQLdb.connect(host=\char`\"{}localhost\char`\"{}, user=\char`\"{}root\char`\"{}, passwd=\char`\"{}vilu7240\char`\"{},db=\char`\"{}parafarmacie\char`\"{})}}
+\label{namespacemmasgis_1_1testquerytype_ab8ef45525ef14f1438ad57168a1419e7}
+\hypertarget{namespacemmasgis_1_1testquerytype_aad7162e1d4ef85960e8f2982616b3db1}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!description@{description}}
+\index{description@{description}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::testquerytype::description} = crs.description}}
+\label{namespacemmasgis_1_1testquerytype_aad7162e1d4ef85960e8f2982616b3db1}
+\hypertarget{namespacemmasgis_1_1testquerytype_a2177e37b08c45fefce43557ea482df02}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!field\_\-type@{field\_\-type}}
+\index{field\_\-type@{field\_\-type}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{field\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}dictionary {\bf mmasgis::testquerytype::field\_\-type}}}
+\label{namespacemmasgis_1_1testquerytype_a2177e37b08c45fefce43557ea482df02}
+\hypertarget{namespacemmasgis_1_1testquerytype_add59df84ba27b1f13d5c8cd04a508a93}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!my\_\-conv@{my\_\-conv}}
+\index{my\_\-conv@{my\_\-conv}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{my\_\-conv}]{\setlength{\rightskip}{0pt plus 5cm}dictionary {\bf mmasgis::testquerytype::my\_\-conv} = \{ FIELD\_\-TYPE.LONG: int \}}}
+\label{namespacemmasgis_1_1testquerytype_add59df84ba27b1f13d5c8cd04a508a93}
+\hypertarget{namespacemmasgis_1_1testquerytype_af8b1b02c5ffcbeb1566fa0592598074f}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!q@{q}}
+\index{q@{q}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{q}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::testquerytype::q} = crs.fetchone()}}
+\label{namespacemmasgis_1_1testquerytype_af8b1b02c5ffcbeb1566fa0592598074f}
+\hypertarget{namespacemmasgis_1_1testquerytype_af5ec20ce98eba724a388ca9bdf17af90}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!tipo@{tipo}}
+\index{tipo@{tipo}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{tipo}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf mmasgis::testquerytype::tipo} = 'comune'}}
+\label{namespacemmasgis_1_1testquerytype_af5ec20ce98eba724a388ca9bdf17af90}
+\hypertarget{namespacemmasgis_1_1testquerytype_a9a0064269538b713487fc7407e3478ab}{
+\index{mmasgis::testquerytype@{mmasgis::testquerytype}!types@{types}}
+\index{types@{types}!mmasgis::testquerytype@{mmasgis::testquerytype}}
+\subsubsection[{types}]{\setlength{\rightskip}{0pt plus 5cm}list {\bf mmasgis::testquerytype::types} = \mbox{[}type(col) for col in {\bf q}\mbox{]}}}
+\label{namespacemmasgis_1_1testquerytype_a9a0064269538b713487fc7407e3478ab}

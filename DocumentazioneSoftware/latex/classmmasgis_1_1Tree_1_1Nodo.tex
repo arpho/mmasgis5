@@ -1,0 +1,186 @@
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo}{
+\section{mmasgis::Tree::Nodo Class Reference}
+\label{classmmasgis_1_1Tree_1_1Nodo}\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_afbd55e5817ce37da325a51b2dad96eff}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_a43280f451ef1fe51c503f08659fff4b4}{getFeatId}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_a8f41bb5f132efbd2add6645f80e1a39c}{getId}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_a4b6aeb037ec5589964797e98b67fd472}{getNode}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_a26eaa5ab2f59cfa857cd8014a9608930}{getFather}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_aceed0821f84bca09dbe46242c2ffe77b}{getCathegory}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_a159196d07d62acd7ded0087f52376044}{getHeader}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Nodo_a30b4b0fa4d990d46ca52ea8e699187cd}{setNode}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Nodo_a30738bb35d193b4c6e61fd63acd79326}{header}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Nodo_a07e717036e6d84d279917132cee27fe8}{feat\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Nodo_a496136284f23687076e518a20fad5752}{id}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Nodo_a9c8640dd185de1d0a484428dcfa0e8e9}{cathegory}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Nodo_a9176ca6301420550f4dc6f00862c29eb}{father\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Nodo_ae60f9eb9bcf716fbf821c2d75b189740}{QItem}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}rappresenta i nodi che comporranno l'albero, cioe' tutti gli elementi feature che mmasgis rileva negli shapefiles durante la fase di caricamento del plugin
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_afbd55e5817ce37da325a51b2dad96eff}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{header, }
+\item[{}]{Id, }
+\item[{}]{cathegory, }
+\item[{}]{father, }
+\item[{}]{featId}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_afbd55e5817ce37da325a51b2dad96eff}
+\begin{DoxyVerb}
+@param string:testo che accompagna lo item
+@param int: id che distingue l'elemento
+@param string: categoria di appartenenza dello item: <'cap'><'comune'><'provincia'><'regione'>
+@param param:     
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_aceed0821f84bca09dbe46242c2ffe77b}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!getCathegory@{getCathegory}}
+\index{getCathegory@{getCathegory}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{getCathegory}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::getCathegory (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_aceed0821f84bca09dbe46242c2ffe77b}
+\begin{DoxyVerb}getter per self.cathegory
+@return: string
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Nodo_a26eaa5ab2f59cfa857cd8014a9608930}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!getFather@{getFather}}
+\index{getFather@{getFather}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{getFather}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::getFather (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a26eaa5ab2f59cfa857cd8014a9608930}
+\begin{DoxyVerb}getter dell'identificativo del fATHER 	 del nodo
+@return: object <string><int>
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Nodo_a43280f451ef1fe51c503f08659fff4b4}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!getFeatId@{getFeatId}}
+\index{getFeatId@{getFeatId}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{getFeatId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::getFeatId (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a43280f451ef1fe51c503f08659fff4b4}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a159196d07d62acd7ded0087f52376044}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{getHeader}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::getHeader (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a159196d07d62acd7ded0087f52376044}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a8f41bb5f132efbd2add6645f80e1a39c}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!getId@{getId}}
+\index{getId@{getId}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{getId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::getId (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a8f41bb5f132efbd2add6645f80e1a39c}
+\begin{DoxyVerb}getter di Id
+@return: int
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Nodo_a4b6aeb037ec5589964797e98b67fd472}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!getNode@{getNode}}
+\index{getNode@{getNode}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{getNode}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::getNode (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a4b6aeb037ec5589964797e98b67fd472}
+\begin{DoxyVerb}getter per il nodo dell'albero
+@return QTreeWidgetItem
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Nodo_a30b4b0fa4d990d46ca52ea8e699187cd}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!setNode@{setNode}}
+\index{setNode@{setNode}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{setNode}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Nodo::setNode (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{q}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a30b4b0fa4d990d46ca52ea8e699187cd}
+\begin{DoxyVerb}setter per il nodo dell'albero
+@param QTreeWidgetItem:
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a9c8640dd185de1d0a484428dcfa0e8e9}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!cathegory@{cathegory}}
+\index{cathegory@{cathegory}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{cathegory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Nodo::cathegory}}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a9c8640dd185de1d0a484428dcfa0e8e9}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a9176ca6301420550f4dc6f00862c29eb}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!father\_\-id@{father\_\-id}}
+\index{father\_\-id@{father\_\-id}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{father\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Nodo::father\_\-id}}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a9176ca6301420550f4dc6f00862c29eb}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a07e717036e6d84d279917132cee27fe8}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!feat\_\-id@{feat\_\-id}}
+\index{feat\_\-id@{feat\_\-id}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{feat\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Nodo::feat\_\-id}}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a07e717036e6d84d279917132cee27fe8}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a30738bb35d193b4c6e61fd63acd79326}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!header@{header}}
+\index{header@{header}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Nodo::header}}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a30738bb35d193b4c6e61fd63acd79326}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_a496136284f23687076e518a20fad5752}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!id@{id}}
+\index{id@{id}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Nodo::id}}}
+\label{classmmasgis_1_1Tree_1_1Nodo_a496136284f23687076e518a20fad5752}
+\hypertarget{classmmasgis_1_1Tree_1_1Nodo_ae60f9eb9bcf716fbf821c2d75b189740}{
+\index{mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}!QItem@{QItem}}
+\index{QItem@{QItem}!mmasgis::Tree::Nodo@{mmasgis::Tree::Nodo}}
+\subsubsection[{QItem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Nodo::QItem}}}
+\label{classmmasgis_1_1Tree_1_1Nodo_ae60f9eb9bcf716fbf821c2d75b189740}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Tree_8py}{Tree.py}\end{DoxyCompactItemize}

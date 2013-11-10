@@ -1,0 +1,127 @@
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi}{
+\section{mmasgis::sqlAlchemyQueryClass::Marchi Class Reference}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi}\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a20cf3d9f438f05a9e24de5b926039639}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a5edb18c319c51c33ca69684ed60e1869}{\_\-\_\-repr\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a0d3298e704e1408300791478db39b922}{category}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a9b8d251712fec4b6a7316ae8a6e57cdf}{query\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_ac87f896cc6c440e77b20ef927fa310a6}{marchio\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a1219279932278b7521c5bb94e5f8ccd5}{id} = Column(Integer, primary\_\-key=True,autoincrement=True)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a4a38d6d41bd48400494f91a23739dd68}{marchio\_\-id} = Column(Integer, nullable=False)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a9ce128f3578e1ba4c287a3e32037932e}{category} = Column(Integer, nullable=False)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a693b33009554c00197dc7ec1b9f90dfa}{query\_\-id} = Column(Integer, ForeignKey('queries.id'))
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_aa8687bdceacf9ed56e60c93baf5ed38f}{user} = relation(\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Query}{Query}, backref=backref('marchi', order\_\-by=\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a1219279932278b7521c5bb94e5f8ccd5}{id}))
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_af08cfd6388a8c77a60d3c4e7b20d4160}{\_\-\_\-tablename\_\-\_\-} = \char`\"{}marchi\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+Address Class
+ 
+Create some class properties before initilization
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a20cf3d9f438f05a9e24de5b926039639}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::sqlAlchemyQueryClass::Marchi::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{query, }
+\item[{}]{category, }
+\item[{}]{marchio\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a20cf3d9f438f05a9e24de5b926039639}
+\begin{DoxyVerb}Constructor\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a5edb18c319c51c33ca69684ed60e1869}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::sqlAlchemyQueryClass::Marchi::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a5edb18c319c51c33ca69684ed60e1869}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_af08cfd6388a8c77a60d3c4e7b20d4160}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!\_\-\_\-tablename\_\-\_\-@{\_\-\_\-tablename\_\-\_\-}}
+\index{\_\-\_\-tablename\_\-\_\-@{\_\-\_\-tablename\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{\_\-\_\-tablename\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf mmasgis::sqlAlchemyQueryClass::Marchi::\_\-\_\-tablename\_\-\_\-} = \char`\"{}marchi\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_af08cfd6388a8c77a60d3c4e7b20d4160}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a9ce128f3578e1ba4c287a3e32037932e}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!category@{category}}
+\index{category@{category}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{category}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Marchi::category} = Column(Integer, nullable=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a9ce128f3578e1ba4c287a3e32037932e}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a0d3298e704e1408300791478db39b922}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!category@{category}}
+\index{category@{category}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{category}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Marchi::category}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a0d3298e704e1408300791478db39b922}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a1219279932278b7521c5bb94e5f8ccd5}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!id@{id}}
+\index{id@{id}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Marchi::id} = Column(Integer, primary\_\-key=True,autoincrement=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a1219279932278b7521c5bb94e5f8ccd5}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_ac87f896cc6c440e77b20ef927fa310a6}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!marchio\_\-id@{marchio\_\-id}}
+\index{marchio\_\-id@{marchio\_\-id}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{marchio\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Marchi::marchio\_\-id}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_ac87f896cc6c440e77b20ef927fa310a6}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a4a38d6d41bd48400494f91a23739dd68}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!marchio\_\-id@{marchio\_\-id}}
+\index{marchio\_\-id@{marchio\_\-id}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{marchio\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Marchi::marchio\_\-id} = Column(Integer, nullable=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a4a38d6d41bd48400494f91a23739dd68}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a9b8d251712fec4b6a7316ae8a6e57cdf}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!query\_\-id@{query\_\-id}}
+\index{query\_\-id@{query\_\-id}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{query\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Marchi::query\_\-id}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a9b8d251712fec4b6a7316ae8a6e57cdf}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a693b33009554c00197dc7ec1b9f90dfa}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!query\_\-id@{query\_\-id}}
+\index{query\_\-id@{query\_\-id}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{query\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Marchi::query\_\-id} = Column(Integer, ForeignKey('queries.id'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_a693b33009554c00197dc7ec1b9f90dfa}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_aa8687bdceacf9ed56e60c93baf5ed38f}{
+\index{mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}!user@{user}}
+\index{user@{user}!mmasgis::sqlAlchemyQueryClass::Marchi@{mmasgis::sqlAlchemyQueryClass::Marchi}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Marchi::user} = relation({\bf Query}, backref=backref('marchi', order\_\-by={\bf id}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Marchi_aa8687bdceacf9ed56e60c93baf5ed38f}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sqlAlchemyQueryClass_8py}{sqlAlchemyQueryClass.py}\end{DoxyCompactItemize}

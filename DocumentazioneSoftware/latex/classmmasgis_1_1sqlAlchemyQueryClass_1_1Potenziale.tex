@@ -1,0 +1,127 @@
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale}{
+\section{mmasgis::sqlAlchemyQueryClass::Potenziale Class Reference}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale}\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a73176c834f5132e2a35531bafde39ea8}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_acf1d488f40e113842bebf2f63cc8573d}{\_\-\_\-repr\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a6c32f0eb1a8fb86dae28f94c04ad8856}{category}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_ab7385f41e6c5dd3615da1dd3a8c1661e}{potenziale\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a72a6af708fc6051c09dddea0904d99d4}{query\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_aac8310bcdcac4eb583c609ae8305b318}{id} = Column(Integer, primary\_\-key=True,autoincrement=True)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a65403fffb80e66c2b898feeac29fdc05}{potenziale\_\-id} = Column(Integer, nullable=False)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a9e0dd97ccae5fa347bff42a6faea0f2f}{category} = Column(Integer, nullable=False)
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a8c0ca5d07c20cec3a56d93957ba7e916}{query\_\-id} = Column(Integer, ForeignKey('queries.id'))
+\item 
+tuple \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a2761c76b2569922e0449a35cce40f1b7}{user} = relation(\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Query}{Query}, backref=backref('potenziali', order\_\-by=\hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_aac8310bcdcac4eb583c609ae8305b318}{id}))
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_ae917bcaa532cb8d31675f94f3dfb86e4}{\_\-\_\-tablename\_\-\_\-} = \char`\"{}potenziali\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+Address Class
+ 
+Create some class properties before initilization
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a73176c834f5132e2a35531bafde39ea8}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::sqlAlchemyQueryClass::Potenziale::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{query, }
+\item[{}]{category, }
+\item[{}]{potenziale\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a73176c834f5132e2a35531bafde39ea8}
+\begin{DoxyVerb}Constructor\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_acf1d488f40e113842bebf2f63cc8573d}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::sqlAlchemyQueryClass::Potenziale::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_acf1d488f40e113842bebf2f63cc8573d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_ae917bcaa532cb8d31675f94f3dfb86e4}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!\_\-\_\-tablename\_\-\_\-@{\_\-\_\-tablename\_\-\_\-}}
+\index{\_\-\_\-tablename\_\-\_\-@{\_\-\_\-tablename\_\-\_\-}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{\_\-\_\-tablename\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf mmasgis::sqlAlchemyQueryClass::Potenziale::\_\-\_\-tablename\_\-\_\-} = \char`\"{}potenziali\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_ae917bcaa532cb8d31675f94f3dfb86e4}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a9e0dd97ccae5fa347bff42a6faea0f2f}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!category@{category}}
+\index{category@{category}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{category}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Potenziale::category} = Column(Integer, nullable=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a9e0dd97ccae5fa347bff42a6faea0f2f}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a6c32f0eb1a8fb86dae28f94c04ad8856}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!category@{category}}
+\index{category@{category}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{category}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Potenziale::category}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a6c32f0eb1a8fb86dae28f94c04ad8856}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_aac8310bcdcac4eb583c609ae8305b318}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!id@{id}}
+\index{id@{id}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Potenziale::id} = Column(Integer, primary\_\-key=True,autoincrement=True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_aac8310bcdcac4eb583c609ae8305b318}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_ab7385f41e6c5dd3615da1dd3a8c1661e}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!potenziale\_\-id@{potenziale\_\-id}}
+\index{potenziale\_\-id@{potenziale\_\-id}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{potenziale\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Potenziale::potenziale\_\-id}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_ab7385f41e6c5dd3615da1dd3a8c1661e}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a65403fffb80e66c2b898feeac29fdc05}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!potenziale\_\-id@{potenziale\_\-id}}
+\index{potenziale\_\-id@{potenziale\_\-id}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{potenziale\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Potenziale::potenziale\_\-id} = Column(Integer, nullable=False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a65403fffb80e66c2b898feeac29fdc05}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a72a6af708fc6051c09dddea0904d99d4}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!query\_\-id@{query\_\-id}}
+\index{query\_\-id@{query\_\-id}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{query\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::sqlAlchemyQueryClass::Potenziale::query\_\-id}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a72a6af708fc6051c09dddea0904d99d4}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a8c0ca5d07c20cec3a56d93957ba7e916}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!query\_\-id@{query\_\-id}}
+\index{query\_\-id@{query\_\-id}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{query\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Potenziale::query\_\-id} = Column(Integer, ForeignKey('queries.id'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a8c0ca5d07c20cec3a56d93957ba7e916}
+\hypertarget{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a2761c76b2569922e0449a35cce40f1b7}{
+\index{mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}!user@{user}}
+\index{user@{user}!mmasgis::sqlAlchemyQueryClass::Potenziale@{mmasgis::sqlAlchemyQueryClass::Potenziale}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf mmasgis::sqlAlchemyQueryClass::Potenziale::user} = relation({\bf Query}, backref=backref('potenziali', order\_\-by={\bf id}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classmmasgis_1_1sqlAlchemyQueryClass_1_1Potenziale_a2761c76b2569922e0449a35cce40f1b7}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sqlAlchemyQueryClass_8py}{sqlAlchemyQueryClass.py}\end{DoxyCompactItemize}

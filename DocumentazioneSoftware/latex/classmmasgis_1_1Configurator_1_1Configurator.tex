@@ -1,0 +1,206 @@
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator}{
+\section{mmasgis::Configurator::Configurator Class Reference}
+\label{classmmasgis_1_1Configurator_1_1Configurator}\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_abbd0021f723dd28cbc98bce04907a9c7}{\_\-\_\-repr\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a4e2f2a1c5981a4d277b667bc92763ff0}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_ab3984ea468895a7a797f75b9cafc4ee2}{setMax}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a5c1fccf446d61c01ab67f5bfc9ba2482}{getMax}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_ad8b3625c8a10cc77a2b7a13cc27aaabf}{addElement}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_aa44e61bfc76f5f9fbeaf94a39f803b8f}{getData}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a9d1f48a13808b0d7e6b46bf858bfe1fc}{print2Pdf}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a368672c2a0645e09d375e124c9e50f5a}{getHeaders}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a1c26e3e7f3b21549e6808c9561fcd681}{getAvailableElements}
+\item 
+def \hyperlink{classmmasgis_1_1Configurator_1_1Configurator_afab8441a7b863a799637ed5f99259b89}{setEntityList}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a7f3c485048d08c5801a2f60fd53c96a0}{max}
+\item 
+\hyperlink{classmmasgis_1_1Configurator_1_1Configurator_ad1ae6d3e1ac7ca1400ade8523a1d38c2}{entityList}
+\item 
+\hyperlink{classmmasgis_1_1Configurator_1_1Configurator_a919d5d22e288a7284c2c8831386e6b39}{tab}
+\item 
+\hyperlink{classmmasgis_1_1Configurator_1_1Configurator_aafaf36e040cdfd167be7c865cc482200}{db}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+rappresenta la lista degli elementi selezionati per  le entita' configurabili e agisce da wrapper per i metodi getHeaders, getAvailableElements e getData 
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a4e2f2a1c5981a4d277b667bc92763ff0}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{tab, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a4e2f2a1c5981a4d277b667bc92763ff0}
+\begin{DoxyVerb}
+@param string:tab di appartenenza dell'entita' configurabile
+@note: i valori previsti per tab sono 'marche' e 'parametri' 
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_abbd0021f723dd28cbc98bce04907a9c7}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_abbd0021f723dd28cbc98bce04907a9c7}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_ad8b3625c8a10cc77a2b7a13cc27aaabf}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!addElement@{addElement}}
+\index{addElement@{addElement}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{addElement}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::addElement (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{e, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_ad8b3625c8a10cc77a2b7a13cc27aaabf}
+\begin{DoxyVerb}
+aggiunge un item a self.entityList
+@param EntityElement:
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a1c26e3e7f3b21549e6808c9561fcd681}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!getAvailableElements@{getAvailableElements}}
+\index{getAvailableElements@{getAvailableElements}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{getAvailableElements}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::getAvailableElements (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{tab}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a1c26e3e7f3b21549e6808c9561fcd681}
+\begin{DoxyVerb}
+ritorna la lista degli elementi selezionabili per configurare l'entita'
+@param string:<'marche'>,<'parametri'> specifica il tipo di entita' 
+@return: [{string:int}]::[{header:class_id}]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Configurator_1_1Configurator_aa44e61bfc76f5f9fbeaf94a39f803b8f}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!getData@{getData}}
+\index{getData@{getData}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{getData}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::getData (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_aa44e61bfc76f5f9fbeaf94a39f803b8f}
+\begin{DoxyVerb}
+ritorna i dati delle entita' selezionate, per lo Id passato come parametro
+@param int: Id del pv sotto analisi
+@return: [string]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a368672c2a0645e09d375e124c9e50f5a}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{getHeaders}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::getHeaders (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a368672c2a0645e09d375e124c9e50f5a}
+\begin{DoxyVerb}ritorna la lista degli headers da esportare
+@return: [string]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a5c1fccf446d61c01ab67f5bfc9ba2482}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!getMax@{getMax}}
+\index{getMax@{getMax}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{getMax}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::getMax (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a5c1fccf446d61c01ab67f5bfc9ba2482}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a9d1f48a13808b0d7e6b46bf858bfe1fc}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!print2Pdf@{print2Pdf}}
+\index{print2Pdf@{print2Pdf}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{print2Pdf}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::print2Pdf (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a9d1f48a13808b0d7e6b46bf858bfe1fc}
+\begin{DoxyVerb}
+genera il l'anagrafica in formato pdf per un  pv
+@param int: pv_id del pv da esportare 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Configurator_1_1Configurator_afab8441a7b863a799637ed5f99259b89}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!setEntityList@{setEntityList}}
+\index{setEntityList@{setEntityList}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{setEntityList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::setEntityList (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_afab8441a7b863a799637ed5f99259b89}
+\begin{DoxyVerb}
+setter per self.entityList
+@param [EntityElement]: rappresentala lista delle entita' selezionate, questa viene popolata e passata a Configurator dalla gui configurazione
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Configurator_1_1Configurator_ab3984ea468895a7a797f75b9cafc4ee2}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!setMax@{setMax}}
+\index{setMax@{setMax}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{setMax}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Configurator::Configurator::setMax (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_ab3984ea468895a7a797f75b9cafc4ee2}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_aafaf36e040cdfd167be7c865cc482200}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!db@{db}}
+\index{db@{db}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Configurator::Configurator::db}}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_aafaf36e040cdfd167be7c865cc482200}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_ad1ae6d3e1ac7ca1400ade8523a1d38c2}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!entityList@{entityList}}
+\index{entityList@{entityList}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{entityList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Configurator::Configurator::entityList}}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_ad1ae6d3e1ac7ca1400ade8523a1d38c2}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a7f3c485048d08c5801a2f60fd53c96a0}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!max@{max}}
+\index{max@{max}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Configurator::Configurator::max}}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a7f3c485048d08c5801a2f60fd53c96a0}
+\hypertarget{classmmasgis_1_1Configurator_1_1Configurator_a919d5d22e288a7284c2c8831386e6b39}{
+\index{mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}!tab@{tab}}
+\index{tab@{tab}!mmasgis::Configurator::Configurator@{mmasgis::Configurator::Configurator}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Configurator::Configurator::tab}}}
+\label{classmmasgis_1_1Configurator_1_1Configurator_a919d5d22e288a7284c2c8831386e6b39}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Configurator_8py}{Configurator.py}\end{DoxyCompactItemize}

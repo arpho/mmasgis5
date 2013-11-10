@@ -1,0 +1,271 @@
+\hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries}{
+\section{mmasgis::queriesDb::DbQueries Class Reference}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries}\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a42c8631ef86b4000397a770e8c447fc5}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_adb123a39b44462afe0c6d5c3bfbcec80}{insertParametri}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_aaa833126e22ebdcb51c16a87767e987d}{getFullQuery}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_ac1cde38c687abbeb2acf6eb3d0b19c5c}{insertPotenziale}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a3a6226323cd0e86a34b4480d39c0f332}{insertMarchi}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a3cd7ca0d8b60eb6397d702e726e9e8e4}{commitQuery}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_aaea7ab455bc52bfbb3adb027e8bec249}{insertQuery1}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a71813dd9cbdf29626362a58de9d977bb}{insertQuery}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_aaeb4101870eae18ed9b472e25238f2b9}{getParametri}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a8998069d0e06c47e747478bbc52facdc}{getMarchi}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a80df71df9c626b02b0db40250cf1c170}{getPotenziali}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a48a4fb600084a6e8acb44474798d2ef8}{getQueries}
+\item 
+def \hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_afeadc19e0479331b8aa6dd328096695a}{getQueryById}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a20b0c0c4f51b19a3e91c40d5bdc76002}{session}
+\item 
+\hyperlink{classmmasgis_1_1queriesDb_1_1DbQueries_a0efd3d7c2e4a2c9a92305d278f94c3ff}{insertFunctions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+questa classe gestisce le operazioni di interrogazione al dbQueries.sql
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a42c8631ef86b4000397a770e8c447fc5}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a42c8631ef86b4000397a770e8c447fc5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a3cd7ca0d8b60eb6397d702e726e9e8e4}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!commitQuery@{commitQuery}}
+\index{commitQuery@{commitQuery}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{commitQuery}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::commitQuery (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a3cd7ca0d8b60eb6397d702e726e9e8e4}
+\begin{DoxyVerb}
+esegue il commit  su queryDb
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_aaa833126e22ebdcb51c16a87767e987d}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!getFullQuery@{getFullQuery}}
+\index{getFullQuery@{getFullQuery}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{getFullQuery}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::getFullQuery (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{queryId}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_aaa833126e22ebdcb51c16a87767e987d}
+\begin{DoxyVerb}
+recupera tutti i campi di una query
+@param queryid:	Integer
+@return: {'potenziali':[(category,potenziale_id)],'marchi':[(category,marchio_id)],'parametri':[(category,parametro_id)]}
+@note: ex getFieldsQuery
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a8998069d0e06c47e747478bbc52facdc}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!getMarchi@{getMarchi}}
+\index{getMarchi@{getMarchi}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{getMarchi}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::getMarchi (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{queryId}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a8998069d0e06c47e747478bbc52facdc}
+\begin{DoxyVerb}
+recupera i marchi relativi ad una query
+@param queryId:	String
+@return: [(Marchi.category,Marchi.potenziale_id)]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_aaeb4101870eae18ed9b472e25238f2b9}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!getParametri@{getParametri}}
+\index{getParametri@{getParametri}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{getParametri}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::getParametri (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{queryId}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_aaeb4101870eae18ed9b472e25238f2b9}
+\begin{DoxyVerb}
+recupera i parametri relativi ad una query
+@param queryId:	String
+@return: [(Parametro.category,Parametro_id.potenziale_id)]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a80df71df9c626b02b0db40250cf1c170}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!getPotenziali@{getPotenziali}}
+\index{getPotenziali@{getPotenziali}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{getPotenziali}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::getPotenziali (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{queryId}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a80df71df9c626b02b0db40250cf1c170}
+\begin{DoxyVerb}
+recupera i potenziali relativi ad una query
+@param queryId:	String
+@return: [(Potenziale.category,Potenziale.potenziale_id)]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a48a4fb600084a6e8acb44474798d2ef8}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!getQueries@{getQueries}}
+\index{getQueries@{getQueries}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{getQueries}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::getQueries (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a48a4fb600084a6e8acb44474798d2ef8}
+\begin{DoxyVerb}
+ritorna la lista di tutte le queries presenti nel db
+@return: [Query]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_afeadc19e0479331b8aa6dd328096695a}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!getQueryById@{getQueryById}}
+\index{getQueryById@{getQueryById}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{getQueryById}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::getQueryById (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{queryId}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_afeadc19e0479331b8aa6dd328096695a}
+\begin{DoxyVerb}
+recupera una query dato lo id
+@param queryId: Integer
+@return: Query 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a3a6226323cd0e86a34b4480d39c0f332}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!insertMarchi@{insertMarchi}}
+\index{insertMarchi@{insertMarchi}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{insertMarchi}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::insertMarchi (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{query\_\-id, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a3a6226323cd0e86a34b4480d39c0f332}
+\begin{DoxyVerb}
+inserisce una lista di marchi  per una query specifica, va chiamato
+ da insertQuery che provvede al commit
+ @param query_id: Integer 
+ @param l:	[(category:Integer,marchio_id:Integer)]
+ @return: None
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_adb123a39b44462afe0c6d5c3bfbcec80}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!insertParametri@{insertParametri}}
+\index{insertParametri@{insertParametri}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{insertParametri}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::insertParametri (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{query\_\-id, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_adb123a39b44462afe0c6d5c3bfbcec80}
+\begin{DoxyVerb}
+inserisce una lista di parametri  per una query specifica va chiamato
+ da insertQuery che provvede al commit
+ @param query_id: Integer 
+ @param l:	[(category:Integer,parametro_id:Integer)]
+ @return: None
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_ac1cde38c687abbeb2acf6eb3d0b19c5c}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!insertPotenziale@{insertPotenziale}}
+\index{insertPotenziale@{insertPotenziale}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{insertPotenziale}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::insertPotenziale (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{query\_\-id, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_ac1cde38c687abbeb2acf6eb3d0b19c5c}
+\begin{DoxyVerb}
+inserisce una lista di potenziali  per una query specifica va chiamato
+ da insertQuery che provvede al commit
+ @param query_id: Integer 
+ @param l:	[(category:Integer,potenziale_id:Integer)]
+ @return: None
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a71813dd9cbdf29626362a58de9d977bb}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!insertQuery@{insertQuery}}
+\index{insertQuery@{insertQuery}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{insertQuery}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::insertQuery (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{nome, }
+\item[{}]{descrizione}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a71813dd9cbdf29626362a58de9d977bb}
+\begin{DoxyVerb}
+opera il preinserimento della query,
+ cioe' non esegue il commit della query, a semplicemente il flush, per conoscere lo id della nuova query
+ 
+inserisce una query con le sue liste di parametri, marchi e potenziali nel db 
+@param nome: String
+@param descrizione: String
+@return: int query_id
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_aaea7ab455bc52bfbb3adb027e8bec249}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!insertQuery1@{insertQuery1}}
+\index{insertQuery1@{insertQuery1}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{insertQuery1}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::queriesDb::DbQueries::insertQuery1 (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{nome, }
+\item[{}]{descr}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_aaea7ab455bc52bfbb3adb027e8bec249}
+\begin{DoxyVerb}
+inserisce una query nella tabella queries
+@param nome: String
+@param param: String  
+@return: None
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a0efd3d7c2e4a2c9a92305d278f94c3ff}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!insertFunctions@{insertFunctions}}
+\index{insertFunctions@{insertFunctions}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{insertFunctions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::queriesDb::DbQueries::insertFunctions}}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a0efd3d7c2e4a2c9a92305d278f94c3ff}
+\hypertarget{classmmasgis_1_1queriesDb_1_1DbQueries_a20b0c0c4f51b19a3e91c40d5bdc76002}{
+\index{mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}!session@{session}}
+\index{session@{session}!mmasgis::queriesDb::DbQueries@{mmasgis::queriesDb::DbQueries}}
+\subsubsection[{session}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::queriesDb::DbQueries::session}}}
+\label{classmmasgis_1_1queriesDb_1_1DbQueries_a20b0c0c4f51b19a3e91c40d5bdc76002}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{queriesDb_8py}{queriesDb.py}\end{DoxyCompactItemize}

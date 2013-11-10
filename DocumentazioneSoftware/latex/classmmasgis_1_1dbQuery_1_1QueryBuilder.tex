@@ -1,0 +1,231 @@
+\hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder}{
+\section{mmasgis::dbQuery::QueryBuilder Class Reference}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder}\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a4cb9814e056a4dfd9426b2cc579e9971}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a01122231193ae936cbd64c7b8dd4d241}{groupList}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a9e6dce9a3999325f7a0c8276b929c2de}{selectFormatter}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a3c683a2dc2d2f6cb35846330887c347c}{queryUnifier}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_aca2bc914b8e8d100d2a918b67db45502}{coupleMaker}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a2398fa9b3c4464923389339015c58543}{orPackager}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a0369a426cbf0fe2d1adcbfde20273a62}{andPackager}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_aa5c83bf2fe93be0b9e25b4da610ade03}{groupMaker}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_aca74db261e89dde9901949e14af2045e}{coupleFormatter}
+\item 
+def \hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a16fb699303cc4831812854e5f9faf8b7}{buildQuery}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a1c49061d6d8fb94b8fc1c5d7ea5cc77b}{columns}
+\item 
+\hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_a9808b65c97bebf9ca620e72b741d9d55}{Query}
+\item 
+\hyperlink{classmmasgis_1_1dbQuery_1_1QueryBuilder_afd03606d75ffde100f068a95e0dc17bf}{d}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+contiene le utilities per generare le queries da usare in interrogazioni
+@note: il risultato del filtro e' ottenuto intersecando i risultati di un massimo di tre query con l'insieme delle anagrafiche derivante dalla selezione geografica:
+ in particolare viene eseguita una query per ogni tab della gui in cui viene  selezionato qualcosa
+ @note:  il criterio per la costruzione dei  filtri richiede: che i parametri appartenenti allo stesso tab vengano messi in AND, cioe'
+ voglio trovare i pv che abbiano tre addetti e 2 vetrine e piu' di quattro vetrine, inoltre iparametri appartenenti alla stessa classe devono essere in OR, cio' significa
+ cerca i pv che abbiano 1, 2 o 3 addetti, i parametri tra i diversi tab sono in AND cioe'
+ voglio i pv che abbiano potenziale mmas 80 o 90 e tre o quattro addetti e 2 vetrine, i tab vengono messi in AND  tramite l'intersezione tra i risultati delle queries  
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a4cb9814e056a4dfd9426b2cc579e9971}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a4cb9814e056a4dfd9426b2cc579e9971}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a0369a426cbf0fe2d1adcbfde20273a62}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!andPackager@{andPackager}}
+\index{andPackager@{andPackager}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{andPackager}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::andPackager (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a0369a426cbf0fe2d1adcbfde20273a62}
+\begin{DoxyVerb}
+costituisce l'ultimo step nella preparazione della query riceve l'uscita  di orPackager e ritorna la clausola where da aggiungere alla query
+@param {class_id:[string]}:out di orPackager
+@return: string 				
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a16fb699303cc4831812854e5f9faf8b7}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!buildQuery@{buildQuery}}
+\index{buildQuery@{buildQuery}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{buildQuery}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::buildQuery (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a16fb699303cc4831812854e5f9faf8b7}
+\begin{DoxyVerb}
+produce la query dalla lista dei parametri
+@param [[class_id,parameter_id]]:[[int,int]]
+@return: string 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_aca74db261e89dde9901949e14af2045e}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!coupleFormatter@{coupleFormatter}}
+\index{coupleFormatter@{coupleFormatter}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{coupleFormatter}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::coupleFormatter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{class\_\-id, }
+\item[{}]{parameter\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_aca74db261e89dde9901949e14af2045e}
+\begin{DoxyVerb}
+genera una "coppia and" del tipo '(tc_cl_.._id =class_id and tc_.._id=parameter_id' cioe' mette assieme classe parametro e parametro id 
+risponde al requisitocerca i pv che classe parametro = addetti e parametro_id= 3 addetti etc., va ripetuto per ogni parametro selezionato
+@param class_id: int id della classe
+@param parameter_id: id del parametro
+@return: string   
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_aca2bc914b8e8d100d2a918b67db45502}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!coupleMaker@{coupleMaker}}
+\index{coupleMaker@{coupleMaker}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{coupleMaker}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::coupleMaker (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{d, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_aca2bc914b8e8d100d2a918b67db45502}
+\begin{DoxyVerb}
+@param {class_id:[parameter_id]}: prende l'output di groupList e genera le condizioni and che formeranno la query del filtro: coppie del tipo tc_cl_mar_id= key and tc_mar_id=parameter_id
+@return:{k:[string]} la chiave e' la stessa del dict in input  
+@note: l'output e' una lista perche' cosi' e' piu' facile gestire i casi speciali del primo e dell'ultimo elemento, infatti questi saranno combinati con degli or che vanno posizionati solo tra gli elementi interni
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a01122231193ae936cbd64c7b8dd4d241}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!groupList@{groupList}}
+\index{groupList@{groupList}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{groupList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::groupList (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a01122231193ae936cbd64c7b8dd4d241}
+\begin{DoxyVerb}
+produce le liste di parametri separati per class_id  
+genera un dict le cui chiavi sono il class_id, mentre i valori sono le liste dei parameters_id che afferiscono alla classe
+@param l: [[int,int]] con il seguente significato [class_id,parameter_id]
+@return: {int:[int]}{class_id:[parameter_id]}: la chiave e' il class_id degli elementi in l, 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_aa5c83bf2fe93be0b9e25b4da610ade03}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!groupMaker@{groupMaker}}
+\index{groupMaker@{groupMaker}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{groupMaker}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::groupMaker (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_aa5c83bf2fe93be0b9e25b4da610ade03}
+\begin{DoxyVerb}
+combina assieme le clausole nelle coppie AND con la clausola OR
+@param [string] : l'input del metodo e' l'output di coupleMaker 
+@return: string: l'insieme delle clausole da aggiungere alla query 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a2398fa9b3c4464923389339015c58543}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!orPackager@{orPackager}}
+\index{orPackager@{orPackager}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{orPackager}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::orPackager (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a2398fa9b3c4464923389339015c58543}
+\begin{DoxyVerb}
+combina le liste in uscita da   keyList2keyCouple con clausole 'or'
+@param {class_id:[string]} { class_id:[coupleFormatter]}:output di  keyList2keyCouple
+@return: {class_id:string}
+@note: il risultato deve ancora essere lavorato: gli elementi del dict vanno messi in and  tramite andPackager
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a3c683a2dc2d2f6cb35846330887c347c}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!queryUnifier@{queryUnifier}}
+\index{queryUnifier@{queryUnifier}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{queryUnifier}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::queryUnifier (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a3c683a2dc2d2f6cb35846330887c347c}
+\begin{DoxyVerb}
+congiunge le select generate da selectFormatter tramite union all
+@param [string]:
+@return: string 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a9e6dce9a3999325f7a0c8276b929c2de}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!selectFormatter@{selectFormatter}}
+\index{selectFormatter@{selectFormatter}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{selectFormatter}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::dbQuery::QueryBuilder::selectFormatter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a9e6dce9a3999325f7a0c8276b929c2de}
+\begin{DoxyVerb}
+genera le clausole select   da unificare con union all
+@param key: string 'parametri','marchi','potenziali'  chiave che identifica il tab
+@param   {int:string}:{class_id:string} out di orPackager
+@return: [string]
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a1c49061d6d8fb94b8fc1c5d7ea5cc77b}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!columns@{columns}}
+\index{columns@{columns}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{columns}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::dbQuery::QueryBuilder::columns}}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a1c49061d6d8fb94b8fc1c5d7ea5cc77b}
+\hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_afd03606d75ffde100f068a95e0dc17bf}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!d@{d}}
+\index{d@{d}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::dbQuery::QueryBuilder::d}}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_afd03606d75ffde100f068a95e0dc17bf}
+\hypertarget{classmmasgis_1_1dbQuery_1_1QueryBuilder_a9808b65c97bebf9ca620e72b741d9d55}{
+\index{mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}!Query@{Query}}
+\index{Query@{Query}!mmasgis::dbQuery::QueryBuilder@{mmasgis::dbQuery::QueryBuilder}}
+\subsubsection[{Query}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::dbQuery::QueryBuilder::Query}}}
+\label{classmmasgis_1_1dbQuery_1_1QueryBuilder_a9808b65c97bebf9ca620e72b741d9d55}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dbQuery_8py}{dbQuery.py}\end{DoxyCompactItemize}

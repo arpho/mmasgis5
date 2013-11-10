@@ -1,0 +1,187 @@
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow}{
+\section{mmasgis::selezioneQuery::SelectionQueryWindow Class Reference}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow}\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+}
+Inheritance diagram for mmasgis::selezioneQuery::SelectionQueryWindow:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a56a9df75c4bafe016bc7ac6212b1bc87}{populateList}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_aaf2db74901214470abf5543b393c7e20}{getItemId}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a23a8a743ee8d1f5ee22a2b3058d0788a}{itemMaker}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a4bb4a4a7ad3fc587c731533ae3fdcae8}{getSelectedItem}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_aeaa19acf2d01ea847b14fcd2fe5eacfb}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a18c803377dfd59204abec6d27035d63e}{on\_\-Selezione\_\-released}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a685c746014f26bc515cb02c8c2b300ec}{on\_\-tableQuery\_\-cellDoubleClicked}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a1a653f4b4765d375c2bb93ce8e0613af}{openQuery}
+\item 
+def \hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a667c6b3bbd583395c56bf31f51f6cafb}{getRowId}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a06b4da3f951473a1fbc5e980abedf71f}{queriesWin}
+\item 
+\hyperlink{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a2901e7f33d6fbb0b717f64c0b8b4af0a}{db}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+wrapper di Ui_SelectionQueryWindow
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_aeaa19acf2d01ea847b14fcd2fe5eacfb}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{queries, }
+\item[{}]{db, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_aeaa19acf2d01ea847b14fcd2fe5eacfb}
+\begin{DoxyVerb}
+@param queries:istanza di interrogazioni, viene usata per invocare il metodo
+ loadQuery che popola le selezioni nella finestra dei filtri
+@param db:QueriesDb, l'istanza di QueriesDb deve essere la stessa per tute la classi che lavorano su dbQuery.sql 
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_aaf2db74901214470abf5543b393c7e20}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!getItemId@{getItemId}}
+\index{getItemId@{getItemId}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{getItemId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::getItemId (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{row}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_aaf2db74901214470abf5543b393c7e20}
+\begin{DoxyVerb}
+recupera lo id dello item  alla riga row
+@param row: Integer
+@return: Integer
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a667c6b3bbd583395c56bf31f51f6cafb}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!getRowId@{getRowId}}
+\index{getRowId@{getRowId}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{getRowId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::getRowId (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{row}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a667c6b3bbd583395c56bf31f51f6cafb}
+\begin{DoxyVerb}
+ ritorna lo Id dello item alla riga row
+ @param row: int 
+ @return: int id dello item
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a4bb4a4a7ad3fc587c731533ae3fdcae8}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!getSelectedItem@{getSelectedItem}}
+\index{getSelectedItem@{getSelectedItem}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{getSelectedItem}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::getSelectedItem (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a4bb4a4a7ad3fc587c731533ae3fdcae8}
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a23a8a743ee8d1f5ee22a2b3058d0788a}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!itemMaker@{itemMaker}}
+\index{itemMaker@{itemMaker}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{itemMaker}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::itemMaker (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{txt, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a23a8a743ee8d1f5ee22a2b3058d0788a}
+\begin{DoxyVerb}
+genera gli elementi da inserire nella tabella
+@param txt:	String
+@param Id:	Integer  query_id
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a18c803377dfd59204abec6d27035d63e}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!on\_\-Selezione\_\-released@{on\_\-Selezione\_\-released}}
+\index{on\_\-Selezione\_\-released@{on\_\-Selezione\_\-released}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{on\_\-Selezione\_\-released}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::on\_\-Selezione\_\-released (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a18c803377dfd59204abec6d27035d63e}
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a685c746014f26bc515cb02c8c2b300ec}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!on\_\-tableQuery\_\-cellDoubleClicked@{on\_\-tableQuery\_\-cellDoubleClicked}}
+\index{on\_\-tableQuery\_\-cellDoubleClicked@{on\_\-tableQuery\_\-cellDoubleClicked}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{on\_\-tableQuery\_\-cellDoubleClicked}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::on\_\-tableQuery\_\-cellDoubleClicked (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{row, }
+\item[{}]{column}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a685c746014f26bc515cb02c8c2b300ec}
+\begin{DoxyVerb}
+sul doppio click esegue self.openQuery
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a1a653f4b4765d375c2bb93ce8e0613af}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!openQuery@{openQuery}}
+\index{openQuery@{openQuery}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{openQuery}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::openQuery (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a1a653f4b4765d375c2bb93ce8e0613af}
+\begin{DoxyVerb}
+legge la query selezionata sulla gui dal db e invoca loadQuery su interrogazioni.py
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a56a9df75c4bafe016bc7ac6212b1bc87}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!populateList@{populateList}}
+\index{populateList@{populateList}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{populateList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::selezioneQuery::SelectionQueryWindow::populateList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a56a9df75c4bafe016bc7ac6212b1bc87}
+\begin{DoxyVerb}
+popola la tabella delle queries e' invocato dal costruttore
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a2901e7f33d6fbb0b717f64c0b8b4af0a}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!db@{db}}
+\index{db@{db}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::selezioneQuery::SelectionQueryWindow::db}}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a2901e7f33d6fbb0b717f64c0b8b4af0a}
+\hypertarget{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a06b4da3f951473a1fbc5e980abedf71f}{
+\index{mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}!queriesWin@{queriesWin}}
+\index{queriesWin@{queriesWin}!mmasgis::selezioneQuery::SelectionQueryWindow@{mmasgis::selezioneQuery::SelectionQueryWindow}}
+\subsubsection[{queriesWin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::selezioneQuery::SelectionQueryWindow::queriesWin}}}
+\label{classmmasgis_1_1selezioneQuery_1_1SelectionQueryWindow_a06b4da3f951473a1fbc5e980abedf71f}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{selezioneQuery_8py}{selezioneQuery.py}\end{DoxyCompactItemize}

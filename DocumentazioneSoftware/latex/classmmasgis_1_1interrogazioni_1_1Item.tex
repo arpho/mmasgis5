@@ -1,0 +1,295 @@
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item}{
+\section{mmasgis::interrogazioni::Item Class Reference}
+\label{classmmasgis_1_1interrogazioni_1_1Item}\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a6797af77310dfaf96553b87ddc46da77}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a67f10408a6827f2c413ef540443c0ce6}{getTab}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a4fb28434bcfd8dccfa3003ad64f3e1e0}{getCeckBox}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a4edfe1ede827bf5aacb55cdbd8b4d37d}{\_\-\_\-repr\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a941a564cecda1b0c709014ad84337e61}{belongsTo}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_ad191d89644c0a476ed3d50a043303803}{getSignature}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a0fe4af29623b5fe214bea25902b1d76f}{isSelected}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_aaf6b92626bbd9139437e423e01f921c0}{setText}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a18955d753819929685217192bf81cb12}{getText}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a0e1351e91fe3fe2fb088016c29f74bcc}{setSelected}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_ae873a6d86ef3fda987ff0251e854d4de}{isSameClass}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a384fe36ec392565f43301ec2759d2709}{has\_\-SameSignature}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a657c13ff7881ad38dbde2ae5ebec033c}{sameTab}
+\item 
+def \hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a247146dbc4673839a2f72faedbd13677}{isSame}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a36e9d3d8dd89b9ac2b5904452634b2c6}{signature}
+\item 
+\hyperlink{classmmasgis_1_1interrogazioni_1_1Item_ae820aa9ce4d0aa95e275033e8b4cc759}{cBox}
+\item 
+\hyperlink{classmmasgis_1_1interrogazioni_1_1Item_addc2f4e0e2a62bd5e79700b9698cb943}{tab}
+\item 
+\hyperlink{classmmasgis_1_1interrogazioni_1_1Item_a1613cc266f2449036ecf24ebe3eb4f6f}{repr}
+\item 
+\hyperlink{classmmasgis_1_1interrogazioni_1_1Item_adf112778684c85b5c4fa632714c31514}{text}
+\item 
+\hyperlink{classmmasgis_1_1interrogazioni_1_1Item_af66e0f09c194d7dca23b7585c5f7e16a}{selected}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+questa classe  gestisce la struttura dati che rappresenta le selezioni dei parametri per il filtro
+si tratta di coppie ordinate di interi [int,int]:[class_id,param_id]
+gli oggetti Item vengono memorizzati da Listmanager
+@note: in precedenti releases di questo interrogazioni e' possibili che signature
+ fosse implementata come coppia,invece che lista funzionalmente non cambia nulla,
+  ma poteva essere origine di un baco
+ @note: la signature  non e' univoca, lo diventa congiuntamente al tab
+quando si calcola l'intersezione delle liste prodotte da interrogazioni, perche' l'intersezione lavora con liste non con tuple
+@todo: sarebbe bello convertire tutte le signature ancora espresse come tuple () in liste [], ma e' piu' un vezzo che qualcosa di serioperche' signature e' instanziata come lista dal costruttore di Item 
+        
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a6797af77310dfaf96553b87ddc46da77}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{signature, }
+\item[{}]{cBox}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a6797af77310dfaf96553b87ddc46da77}
+\begin{DoxyVerb}
+@param item:[int,int] coppia ordinata di interi [class_id,param_id]
+@param cBox: ceckBox:e' il riferimento al ceckbox della categoria
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a4edfe1ede827bf5aacb55cdbd8b4d37d}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a4edfe1ede827bf5aacb55cdbd8b4d37d}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a941a564cecda1b0c709014ad84337e61}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!belongsTo@{belongsTo}}
+\index{belongsTo@{belongsTo}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{belongsTo}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::belongsTo (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{tab}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a941a564cecda1b0c709014ad84337e61}
+\begin{DoxyVerb}
+verifica se il parametro appartiene al tab
+@param tab:string <- ('parametri','marchi','potenziali') 
+@return: bool
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a4fb28434bcfd8dccfa3003ad64f3e1e0}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!getCeckBox@{getCeckBox}}
+\index{getCeckBox@{getCeckBox}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{getCeckBox}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::getCeckBox (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a4fb28434bcfd8dccfa3003ad64f3e1e0}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_ad191d89644c0a476ed3d50a043303803}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!getSignature@{getSignature}}
+\index{getSignature@{getSignature}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{getSignature}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::getSignature (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_ad191d89644c0a476ed3d50a043303803}
+\begin{DoxyVerb}
+getter di signature
+@return: (class_id,param_id):(int,int)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a67f10408a6827f2c413ef540443c0ce6}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!getTab@{getTab}}
+\index{getTab@{getTab}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{getTab}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::getTab (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a67f10408a6827f2c413ef540443c0ce6}
+\begin{DoxyVerb}
+getter del tab e' un wrapper di checkBox.getTab
+@return: string
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a18955d753819929685217192bf81cb12}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!getText@{getText}}
+\index{getText@{getText}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{getText}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::getText (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a18955d753819929685217192bf81cb12}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a384fe36ec392565f43301ec2759d2709}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!has\_\-SameSignature@{has\_\-SameSignature}}
+\index{has\_\-SameSignature@{has\_\-SameSignature}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{has\_\-SameSignature}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::has\_\-SameSignature (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{signature}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a384fe36ec392565f43301ec2759d2709}
+\begin{DoxyVerb}
+@param signature:[int,int][class_id,parameter_id]
+@return boolean 
+verifica che la signature dello item sia uguale a signature
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a247146dbc4673839a2f72faedbd13677}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!isSame@{isSame}}
+\index{isSame@{isSame}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{isSame}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::isSame (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a247146dbc4673839a2f72faedbd13677}
+\begin{DoxyVerb}
+@param i: Item
+@return: bool
+controlla l'uguaglianza tra lo item corrente e un altro mediante
+ confronto tra gli elementi di self.item
+serve per selezionare l'elemento da deselezionare
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_ae873a6d86ef3fda987ff0251e854d4de}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!isSameClass@{isSameClass}}
+\index{isSameClass@{isSameClass}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{isSameClass}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::isSameClass (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{cl}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_ae873a6d86ef3fda987ff0251e854d4de}
+\begin{DoxyVerb}
+@param cl:int
+@return: bool 
+controlla che lo item appartenga alla classe passata come parametro
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a0fe4af29623b5fe214bea25902b1d76f}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!isSelected@{isSelected}}
+\index{isSelected@{isSelected}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{isSelected}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::isSelected (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a0fe4af29623b5fe214bea25902b1d76f}
+\begin{DoxyVerb}
+@return bool
+getter di self.selected, True se il parametro e' presente nella lista dei selezionati
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a657c13ff7881ad38dbde2ae5ebec033c}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!sameTab@{sameTab}}
+\index{sameTab@{sameTab}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{sameTab}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::sameTab (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a657c13ff7881ad38dbde2ae5ebec033c}
+\begin{DoxyVerb}
+confronta il campo tab di due Item
+@param i:Item di confronto
+@return boolean
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a0e1351e91fe3fe2fb088016c29f74bcc}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!setSelected@{setSelected}}
+\index{setSelected@{setSelected}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{setSelected}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::setSelected (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a0e1351e91fe3fe2fb088016c29f74bcc}
+\begin{DoxyVerb}
+@param b: bool
+setter di self.selected, True se il parametro e' presente nella lista dei selezionati
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1interrogazioni_1_1Item_aaf6b92626bbd9139437e423e01f921c0}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!setText@{setText}}
+\index{setText@{setText}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{setText}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::interrogazioni::Item::setText (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_aaf6b92626bbd9139437e423e01f921c0}
+\begin{DoxyVerb}
+@param txt: String
+setter di self.text, self.text e' il testo mostrato accanto allo item nella lista 
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_ae820aa9ce4d0aa95e275033e8b4cc759}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!cBox@{cBox}}
+\index{cBox@{cBox}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{cBox}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::interrogazioni::Item::cBox}}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_ae820aa9ce4d0aa95e275033e8b4cc759}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a1613cc266f2449036ecf24ebe3eb4f6f}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!repr@{repr}}
+\index{repr@{repr}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{repr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::interrogazioni::Item::repr}}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a1613cc266f2449036ecf24ebe3eb4f6f}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_af66e0f09c194d7dca23b7585c5f7e16a}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!selected@{selected}}
+\index{selected@{selected}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{selected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::interrogazioni::Item::selected}}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_af66e0f09c194d7dca23b7585c5f7e16a}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_a36e9d3d8dd89b9ac2b5904452634b2c6}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!signature@{signature}}
+\index{signature@{signature}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{signature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::interrogazioni::Item::signature}}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_a36e9d3d8dd89b9ac2b5904452634b2c6}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_addc2f4e0e2a62bd5e79700b9698cb943}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!tab@{tab}}
+\index{tab@{tab}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::interrogazioni::Item::tab}}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_addc2f4e0e2a62bd5e79700b9698cb943}
+\hypertarget{classmmasgis_1_1interrogazioni_1_1Item_adf112778684c85b5c4fa632714c31514}{
+\index{mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}!text@{text}}
+\index{text@{text}!mmasgis::interrogazioni::Item@{mmasgis::interrogazioni::Item}}
+\subsubsection[{text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::interrogazioni::Item::text}}}
+\label{classmmasgis_1_1interrogazioni_1_1Item_adf112778684c85b5c4fa632714c31514}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interrogazioni_8py}{interrogazioni.py}\end{DoxyCompactItemize}

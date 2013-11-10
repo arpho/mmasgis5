@@ -1,0 +1,96 @@
+\hypertarget{classmmasgis_1_1Entity_1_1Odict}{
+\section{mmasgis::Entity::Odict Class Reference}
+\label{classmmasgis_1_1Entity_1_1Odict}\index{mmasgis::Entity::Odict@{mmasgis::Entity::Odict}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Entity_1_1Odict_adc3627c1fb9f1e1359c6440f1f84da9a}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Entity_1_1Odict_a994316538411163a15ba342f1146b3e0}{clear}
+\item 
+def \hyperlink{classmmasgis_1_1Entity_1_1Odict_a161beaedff5117839b7d613e5aa8211b}{\_\-\_\-setitem\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Entity_1_1Odict_aa4f7b025e3a7e578c1dbf22a6c4139a6}{iterkeys}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Entity_1_1Odict_a44e442abee8c1fe66c5c1d52aea60b20}{order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+implementa un' ordered dict estendendo la classe dict
+crea una lista che memorizza le chiavi inserite nel dict  con lo stesso ordine di inserimento
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Entity_1_1Odict_adc3627c1fb9f1e1359c6440f1f84da9a}{
+\index{mmasgis::Entity::Odict@{mmasgis::Entity::Odict}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Entity::Odict@{mmasgis::Entity::Odict}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Entity::Odict::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Entity_1_1Odict_adc3627c1fb9f1e1359c6440f1f84da9a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Entity_1_1Odict_a161beaedff5117839b7d613e5aa8211b}{
+\index{mmasgis::Entity::Odict@{mmasgis::Entity::Odict}!\_\-\_\-setitem\_\-\_\-@{\_\-\_\-setitem\_\-\_\-}}
+\index{\_\-\_\-setitem\_\-\_\-@{\_\-\_\-setitem\_\-\_\-}!mmasgis::Entity::Odict@{mmasgis::Entity::Odict}}
+\subsubsection[{\_\-\_\-setitem\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Entity::Odict::\_\-\_\-setitem\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Entity_1_1Odict_a161beaedff5117839b7d613e5aa8211b}
+\begin{DoxyVerb}
+override di __setitem__
+oltre alle normali operazioni di __setitem__ inserisce le chiavi in self.order
+@param key: come in dict 
+@param value:come in dict
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Entity_1_1Odict_a994316538411163a15ba342f1146b3e0}{
+\index{mmasgis::Entity::Odict@{mmasgis::Entity::Odict}!clear@{clear}}
+\index{clear@{clear}!mmasgis::Entity::Odict@{mmasgis::Entity::Odict}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Entity::Odict::clear (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Entity_1_1Odict_a994316538411163a15ba342f1146b3e0}
+\begin{DoxyVerb}
+override del metodo clear
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Entity_1_1Odict_aa4f7b025e3a7e578c1dbf22a6c4139a6}{
+\index{mmasgis::Entity::Odict@{mmasgis::Entity::Odict}!iterkeys@{iterkeys}}
+\index{iterkeys@{iterkeys}!mmasgis::Entity::Odict@{mmasgis::Entity::Odict}}
+\subsubsection[{iterkeys}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Entity::Odict::iterkeys (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Entity_1_1Odict_aa4f7b025e3a7e578c1dbf22a6c4139a6}
+\begin{DoxyVerb}
+override del metodo iterkeys invece dell'iteratore di dict ritorna la lista delle chiavi
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Entity_1_1Odict_a44e442abee8c1fe66c5c1d52aea60b20}{
+\index{mmasgis::Entity::Odict@{mmasgis::Entity::Odict}!order@{order}}
+\index{order@{order}!mmasgis::Entity::Odict@{mmasgis::Entity::Odict}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Entity::Odict::order}}}
+\label{classmmasgis_1_1Entity_1_1Odict_a44e442abee8c1fe66c5c1d52aea60b20}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Entity_8py}{Entity.py}\end{DoxyCompactItemize}

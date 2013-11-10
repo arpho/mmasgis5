@@ -1,0 +1,96 @@
+\hypertarget{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow}{
+\section{mmasgis::SaveQuery::SaveQueryWindow Class Reference}
+\label{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow}\index{mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}}
+}
+Inheritance diagram for mmasgis::SaveQuery::SaveQueryWindow:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a08e1b7c441e8a796517e9a80a0c08b6b}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_afc8726fb931f8ff1d27ff64e45c6a7f8}{checkInput}
+\item 
+def \hyperlink{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a78a78469d4c2a1b3456ae7de606c1246}{on\_\-Salva\_\-released}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_ad95c09659404110b243e74947b5fb01a}{lista}
+\item 
+\hyperlink{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a9372f208568cacc3e89243aebbdb4b56}{db}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+wrapper di Ui_SaveQueryWindow
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a08e1b7c441e8a796517e9a80a0c08b6b}{
+\index{mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::SaveQuery::SaveQueryWindow::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lista, }
+\item[{}]{db, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a08e1b7c441e8a796517e9a80a0c08b6b}
+\begin{DoxyVerb}
+@param lista:  [Filter]: lista dei filtri definiti dalla query
+@param db: queriesDb
+@note: l'istanza di queriesDb deve essere la stessa usata dalle istanze di Filter
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_afc8726fb931f8ff1d27ff64e45c6a7f8}{
+\index{mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}!checkInput@{checkInput}}
+\index{checkInput@{checkInput}!mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}}
+\subsubsection[{checkInput}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::SaveQuery::SaveQueryWindow::checkInput (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_afc8726fb931f8ff1d27ff64e45c6a7f8}
+\begin{DoxyVerb}
+verifica che sia stato editato qualcosa nelle due caselle di testo  effettuando un AND 
+su  self.NomeQuery.isModified() e self.DescrizioneQuery.document().isModified()
+@return boolean
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a78a78469d4c2a1b3456ae7de606c1246}{
+\index{mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}!on\_\-Salva\_\-released@{on\_\-Salva\_\-released}}
+\index{on\_\-Salva\_\-released@{on\_\-Salva\_\-released}!mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}}
+\subsubsection[{on\_\-Salva\_\-released}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::SaveQuery::SaveQueryWindow::on\_\-Salva\_\-released (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a78a78469d4c2a1b3456ae7de606c1246}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a9372f208568cacc3e89243aebbdb4b56}{
+\index{mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}!db@{db}}
+\index{db@{db}!mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::SaveQuery::SaveQueryWindow::db}}}
+\label{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_a9372f208568cacc3e89243aebbdb4b56}
+\hypertarget{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_ad95c09659404110b243e74947b5fb01a}{
+\index{mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}!lista@{lista}}
+\index{lista@{lista}!mmasgis::SaveQuery::SaveQueryWindow@{mmasgis::SaveQuery::SaveQueryWindow}}
+\subsubsection[{lista}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::SaveQuery::SaveQueryWindow::lista}}}
+\label{classmmasgis_1_1SaveQuery_1_1SaveQueryWindow_ad95c09659404110b243e74947b5fb01a}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{SaveQuery_8py}{SaveQuery.py}\end{DoxyCompactItemize}

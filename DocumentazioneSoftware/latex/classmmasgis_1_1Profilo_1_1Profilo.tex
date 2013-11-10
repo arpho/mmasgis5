@@ -1,0 +1,161 @@
+\hypertarget{classmmasgis_1_1Profilo_1_1Profilo}{
+\section{mmasgis::Profilo::Profilo Class Reference}
+\label{classmmasgis_1_1Profilo_1_1Profilo}\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_afa8f86b4bae2e92597befe026e56037b}{addEntity}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_acde3b418afd615b35a94988d2d770a3f}{setId}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_a804680366585bd0e69118bf1d5299a74}{getData}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_a7abe9504b687d5cec1ab5cca00ae3098}{needsConfiguration}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_afeae7adb69f0c0495e18541506ce23ec}{getAvailableEntity}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_a35d20203c4de5f4047f9496dcdbe6035}{getHeaders}
+\item 
+def \hyperlink{classmmasgis_1_1Profilo_1_1Profilo_aa86f9f8e468a2ed1c2b5db0a4033b276}{\_\-\_\-init\_\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Profilo_1_1Profilo_ac62cbc02b899eed08145eff52b73ed8f}{entityList}
+\item 
+\hyperlink{classmmasgis_1_1Profilo_1_1Profilo_acb0fb36a472588a1e131116029b949b8}{pv\_\-id}
+\item 
+\hyperlink{classmmasgis_1_1Profilo_1_1Profilo_a0a030e9302bc47528ae29ed3590651bb}{db}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+rappresenta l'insieme di entita' che vengono selezionate per l'esportazione
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Profilo_1_1Profilo_aa86f9f8e468a2ed1c2b5db0a4033b276}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{db}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_aa86f9f8e468a2ed1c2b5db0a4033b276}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Profilo_1_1Profilo_afa8f86b4bae2e92597befe026e56037b}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{addEntity}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::addEntity (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{el}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_afa8f86b4bae2e92597befe026e56037b}
+\begin{DoxyVerb}
+aggiunge un'entita' alla lista delle entita' self.entitylList
+@param el:Entity
+@note: le entita' vengono identificate tramite un id che viene generato  in automatico dal metodo secondo il loro ordine in lista
+la prima entita' avra' id 0 e cosi' via
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Profilo_1_1Profilo_afeae7adb69f0c0495e18541506ce23ec}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!getAvailableEntity@{getAvailableEntity}}
+\index{getAvailableEntity@{getAvailableEntity}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{getAvailableEntity}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::getAvailableEntity (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_afeae7adb69f0c0495e18541506ce23ec}
+\begin{DoxyVerb}ritorna la lista delle entita' non configurabili disponibili
+@return: [string]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Profilo_1_1Profilo_a804680366585bd0e69118bf1d5299a74}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!getData@{getData}}
+\index{getData@{getData}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{getData}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::getData (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_a804680366585bd0e69118bf1d5299a74}
+\begin{DoxyVerb}
+ritorna i dati forniti dalle entita' in self.entityList
+
+@param int:Id del pv da interrogare
+@return: [string]
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Profilo_1_1Profilo_a35d20203c4de5f4047f9496dcdbe6035}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{getHeaders}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::getHeaders (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_a35d20203c4de5f4047f9496dcdbe6035}
+\begin{DoxyVerb}
+ritorna gli header  delle entita' in self.entityList
+@return: [string
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Profilo_1_1Profilo_a7abe9504b687d5cec1ab5cca00ae3098}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!needsConfiguration@{needsConfiguration}}
+\index{needsConfiguration@{needsConfiguration}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{needsConfiguration}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::needsConfiguration (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_a7abe9504b687d5cec1ab5cca00ae3098}
+\begin{DoxyVerb}ritorna vero se c'e' almeno un'entita' ancora da configurare
+ ad ogni entita' applica la funzione Entity.needsConfigured and not Entity.isConfigured
+ quindi ritornera' True solo se la prima e' True e la seconda False, in tutti gli altri casi ritornera' False
+ per sapere se il profilo necessita di configurazione mette in Or il risultato della funzione suddetta applicata ad ogni entita'
+ @return: boolean
+ \end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Profilo_1_1Profilo_acde3b418afd615b35a94988d2d770a3f}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!setId@{setId}}
+\index{setId@{setId}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{setId}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Profilo::Profilo::setId (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{Id}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_acde3b418afd615b35a94988d2d770a3f}
+\begin{DoxyVerb}
+setter degli Id per le entita' in self.entityList
+@param int:Id 
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Profilo_1_1Profilo_a0a030e9302bc47528ae29ed3590651bb}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!db@{db}}
+\index{db@{db}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Profilo::Profilo::db}}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_a0a030e9302bc47528ae29ed3590651bb}
+\hypertarget{classmmasgis_1_1Profilo_1_1Profilo_ac62cbc02b899eed08145eff52b73ed8f}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!entityList@{entityList}}
+\index{entityList@{entityList}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{entityList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Profilo::Profilo::entityList}}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_ac62cbc02b899eed08145eff52b73ed8f}
+\hypertarget{classmmasgis_1_1Profilo_1_1Profilo_acb0fb36a472588a1e131116029b949b8}{
+\index{mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}!pv\_\-id@{pv\_\-id}}
+\index{pv\_\-id@{pv\_\-id}!mmasgis::Profilo::Profilo@{mmasgis::Profilo::Profilo}}
+\subsubsection[{pv\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Profilo::Profilo::pv\_\-id}}}
+\label{classmmasgis_1_1Profilo_1_1Profilo_acb0fb36a472588a1e131116029b949b8}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Profilo_8py}{Profilo.py}\end{DoxyCompactItemize}

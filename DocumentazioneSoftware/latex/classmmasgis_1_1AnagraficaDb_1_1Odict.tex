@@ -1,0 +1,96 @@
+\hypertarget{classmmasgis_1_1AnagraficaDb_1_1Odict}{
+\section{mmasgis::AnagraficaDb::Odict Class Reference}
+\label{classmmasgis_1_1AnagraficaDb_1_1Odict}\index{mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1AnagraficaDb_1_1Odict_aeb877c30f14d9f1d8135940083d83d57}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1AnagraficaDb_1_1Odict_a8271ebf81c2ba45435a8d41ae7f6a22c}{clear}
+\item 
+def \hyperlink{classmmasgis_1_1AnagraficaDb_1_1Odict_aa966c705a0195b503ad97d137606fafc}{\_\-\_\-setitem\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1AnagraficaDb_1_1Odict_a41fa9cd0b8b83ee43c432c2b91a7070d}{iterkeys}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1AnagraficaDb_1_1Odict_a4c251ec2a665ddb4b5fec6d89a4f994a}{order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+implementa un' ordered dict estendendo la classe dict
+crea una lista che memorizza le chiavi inserite nel dict  con lo stesso ordine di inserimento
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1AnagraficaDb_1_1Odict_aeb877c30f14d9f1d8135940083d83d57}{
+\index{mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::AnagraficaDb::Odict::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1AnagraficaDb_1_1Odict_aeb877c30f14d9f1d8135940083d83d57}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1AnagraficaDb_1_1Odict_aa966c705a0195b503ad97d137606fafc}{
+\index{mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}!\_\-\_\-setitem\_\-\_\-@{\_\-\_\-setitem\_\-\_\-}}
+\index{\_\-\_\-setitem\_\-\_\-@{\_\-\_\-setitem\_\-\_\-}!mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}}
+\subsubsection[{\_\-\_\-setitem\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::AnagraficaDb::Odict::\_\-\_\-setitem\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1AnagraficaDb_1_1Odict_aa966c705a0195b503ad97d137606fafc}
+\begin{DoxyVerb}
+override di __setitem__
+oltre alle normali operazioni di __setitem__ inserisce le chiavi in self.order
+@param key: come in dict 
+@param value:come in dict
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1AnagraficaDb_1_1Odict_a8271ebf81c2ba45435a8d41ae7f6a22c}{
+\index{mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}!clear@{clear}}
+\index{clear@{clear}!mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::AnagraficaDb::Odict::clear (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1AnagraficaDb_1_1Odict_a8271ebf81c2ba45435a8d41ae7f6a22c}
+\begin{DoxyVerb}
+override del metodo clear
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1AnagraficaDb_1_1Odict_a41fa9cd0b8b83ee43c432c2b91a7070d}{
+\index{mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}!iterkeys@{iterkeys}}
+\index{iterkeys@{iterkeys}!mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}}
+\subsubsection[{iterkeys}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::AnagraficaDb::Odict::iterkeys (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1AnagraficaDb_1_1Odict_a41fa9cd0b8b83ee43c432c2b91a7070d}
+\begin{DoxyVerb}
+override del metodo iterkeys invece dell'iteratore di dict ritorna la lista delle chiavi
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1AnagraficaDb_1_1Odict_a4c251ec2a665ddb4b5fec6d89a4f994a}{
+\index{mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}!order@{order}}
+\index{order@{order}!mmasgis::AnagraficaDb::Odict@{mmasgis::AnagraficaDb::Odict}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::AnagraficaDb::Odict::order}}}
+\label{classmmasgis_1_1AnagraficaDb_1_1Odict_a4c251ec2a665ddb4b5fec6d89a4f994a}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AnagraficaDb_8py}{AnagraficaDb.py}\end{DoxyCompactItemize}

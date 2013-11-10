@@ -1,0 +1,239 @@
+\hypertarget{classmmasgis_1_1Tree_1_1Tree}{
+\section{mmasgis::Tree::Tree Class Reference}
+\label{classmmasgis_1_1Tree_1_1Tree}\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_ae8fa8ec39bf5653f9c2c6c1dc7971e70}{\_\-\_\-repr\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a73c0e51cec51e7c76b0ed62f83a71d3a}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a7d2d1053440f236e0398395e94c403e8}{addComune}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_af9e41859fd65226839c944d3764c936a}{treeBuilder}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a3b93ae13db8c4ba4d09691e161c736a3}{addCap}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a081bbea78b37c70dd90871c8afbba194}{addProvincia}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a5fd9f0be1c694e13e74cab8ed911007d}{addRegione}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a0638c5e3cfd7da10cb751d248a0816b0}{getComune}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_ac454c77fff5c57dfb275bc51dd24c151}{getCap}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a5f23fd7a8039129af29df201051f71d0}{getProvincia}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_aeaa1adb8c62cd0e4fc263b80d71c24a7}{getRegione}
+\item 
+def \hyperlink{classmmasgis_1_1Tree_1_1Tree_a7e60a83ac3e46f56287a42d58ab9f6f9}{childrenAdder}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Tree_ac1476a216e93868122947fd9bcc78b08}{cap}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Tree_ad2d6f18e57b9ff6d362c4d5f4a2e8942}{comuni}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Tree_a57b120dccb7fc9329c7d46bc28709a58}{provincie}
+\item 
+\hyperlink{classmmasgis_1_1Tree_1_1Tree_acd5d5da7b56946113f9d04a55d4be6db}{regioni}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}implementa la struttura dell'albero dei territori, viene  popolato da mmasgis.py che ne invoca i metodi adder
+inoltre viene usata per popolare i dati predefiniti per la modifica dell'anagrafica
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_a73c0e51cec51e7c76b0ed62f83a71d3a}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a73c0e51cec51e7c76b0ed62f83a71d3a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_ae8fa8ec39bf5653f9c2c6c1dc7971e70}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}}
+\index{\_\-\_\-repr\_\-\_\-@{\_\-\_\-repr\_\-\_\-}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{\_\-\_\-repr\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::\_\-\_\-repr\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_ae8fa8ec39bf5653f9c2c6c1dc7971e70}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_a3b93ae13db8c4ba4d09691e161c736a3}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!addCap@{addCap}}
+\index{addCap@{addCap}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{addCap}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::addCap (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a3b93ae13db8c4ba4d09691e161c736a3}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_a7d2d1053440f236e0398395e94c403e8}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!addComune@{addComune}}
+\index{addComune@{addComune}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{addComune}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::addComune (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a7d2d1053440f236e0398395e94c403e8}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.comuni
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_a081bbea78b37c70dd90871c8afbba194}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!addProvincia@{addProvincia}}
+\index{addProvincia@{addProvincia}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{addProvincia}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::addProvincia (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a081bbea78b37c70dd90871c8afbba194}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.provincia
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_a5fd9f0be1c694e13e74cab8ed911007d}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!addRegione@{addRegione}}
+\index{addRegione@{addRegione}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{addRegione}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::addRegione (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a5fd9f0be1c694e13e74cab8ed911007d}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_a7e60a83ac3e46f56287a42d58ab9f6f9}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!childrenAdder@{childrenAdder}}
+\index{childrenAdder@{childrenAdder}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{childrenAdder}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::childrenAdder (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lf, }
+\item[{}]{lc}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a7e60a83ac3e46f56287a42d58ab9f6f9}
+\begin{DoxyVerb}aggiunge father nodi figli della seconda lista lc ai rispettivi nodi padre nella prima lista
+@param [Nodo]: lista contenente father nodi padre
+@param [Nodo]: lista contenente father nodi figli
+@return: [Nodo] lista dei nodi padre a cui sono stati aggiunti father figli  
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_ac454c77fff5c57dfb275bc51dd24c151}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!getCap@{getCap}}
+\index{getCap@{getCap}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{getCap}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::getCap (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_ac454c77fff5c57dfb275bc51dd24c151}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_a0638c5e3cfd7da10cb751d248a0816b0}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!getComune@{getComune}}
+\index{getComune@{getComune}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{getComune}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::getComune (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a0638c5e3cfd7da10cb751d248a0816b0}
+\begin{DoxyVerb}ritorna la lista self.comuni
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_a5f23fd7a8039129af29df201051f71d0}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!getProvincia@{getProvincia}}
+\index{getProvincia@{getProvincia}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{getProvincia}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::getProvincia (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_a5f23fd7a8039129af29df201051f71d0}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.provincia
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_aeaa1adb8c62cd0e4fc263b80d71c24a7}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!getRegione@{getRegione}}
+\index{getRegione@{getRegione}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{getRegione}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::getRegione (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_aeaa1adb8c62cd0e4fc263b80d71c24a7}
+\begin{DoxyVerb}aggiunge un elemento alla lista self.cap
+@param Nodo:
+self.comuni.append(c)
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1Tree_1_1Tree_af9e41859fd65226839c944d3764c936a}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!treeBuilder@{treeBuilder}}
+\index{treeBuilder@{treeBuilder}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{treeBuilder}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::Tree::Tree::treeBuilder (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1Tree_1_1Tree_af9e41859fd65226839c944d3764c936a}
+\begin{DoxyVerb}
+combina i nodi  delle quattro liste in un unico albero
+ritorna i nodi delle regioni a cui sono stati aggiunti nodi delle provincie, dei comuni e dei cap
+@return: [Nodo]
+@precondition: fare attenzione che id e father_id siano consistenti tra le varie categorie
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_ac1476a216e93868122947fd9bcc78b08}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!cap@{cap}}
+\index{cap@{cap}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{cap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Tree::cap}}}
+\label{classmmasgis_1_1Tree_1_1Tree_ac1476a216e93868122947fd9bcc78b08}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_ad2d6f18e57b9ff6d362c4d5f4a2e8942}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!comuni@{comuni}}
+\index{comuni@{comuni}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{comuni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Tree::comuni}}}
+\label{classmmasgis_1_1Tree_1_1Tree_ad2d6f18e57b9ff6d362c4d5f4a2e8942}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_a57b120dccb7fc9329c7d46bc28709a58}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!provincie@{provincie}}
+\index{provincie@{provincie}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{provincie}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Tree::provincie}}}
+\label{classmmasgis_1_1Tree_1_1Tree_a57b120dccb7fc9329c7d46bc28709a58}
+\hypertarget{classmmasgis_1_1Tree_1_1Tree_acd5d5da7b56946113f9d04a55d4be6db}{
+\index{mmasgis::Tree::Tree@{mmasgis::Tree::Tree}!regioni@{regioni}}
+\index{regioni@{regioni}!mmasgis::Tree::Tree@{mmasgis::Tree::Tree}}
+\subsubsection[{regioni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::Tree::Tree::regioni}}}
+\label{classmmasgis_1_1Tree_1_1Tree_acd5d5da7b56946113f9d04a55d4be6db}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Tree_8py}{Tree.py}\end{DoxyCompactItemize}

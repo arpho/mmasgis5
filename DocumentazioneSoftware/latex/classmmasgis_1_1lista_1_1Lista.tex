@@ -1,0 +1,117 @@
+\hypertarget{classmmasgis_1_1lista_1_1Lista}{
+\section{mmasgis::lista::Lista Class Reference}
+\label{classmmasgis_1_1lista_1_1Lista}\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmmasgis_1_1lista_1_1Lista_ae0755344c0d29448d3b0203906edd540}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classmmasgis_1_1lista_1_1Lista_a3280e641b36dc66572d1b59ae2f4f75f}{appendItem}
+\item 
+def \hyperlink{classmmasgis_1_1lista_1_1Lista_a56e67d969de16fa52cbb70c9c9345009}{resetList}
+\item 
+def \hyperlink{classmmasgis_1_1lista_1_1Lista_a5d059475387a8d86895fc605a6e98ff1}{getList}
+\item 
+def \hyperlink{classmmasgis_1_1lista_1_1Lista_aa9d4cdb5f8c4c5da737774b2a96598c8}{cleanList}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmmasgis_1_1lista_1_1Lista_a487c2fb94a024e6a85d93c4dd9697c3d}{lista}
+\item 
+\hyperlink{classmmasgis_1_1lista_1_1Lista_a869b7f0467c41bf56bf0434d2fab7256}{cons}
+\item 
+\hyperlink{classmmasgis_1_1lista_1_1Lista_a6debfb85e47d9b1a303d11f0ee0f9c9a}{util}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+gestisce la costruzione della lista di selezione geografica
+fornendo tutti i metodi utili alla sua gestione
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_ae0755344c0d29448d3b0203906edd540}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::lista::Lista::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1lista_1_1Lista_ae0755344c0d29448d3b0203906edd540}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_a3280e641b36dc66572d1b59ae2f4f75f}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!appendItem@{appendItem}}
+\index{appendItem@{appendItem}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{appendItem}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::lista::Lista::appendItem (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1lista_1_1Lista_a3280e641b36dc66572d1b59ae2f4f75f}
+\begin{DoxyVerb}
+aggiunge un item alla lista 
+gestendo l'inserimento nel modo appropriato per la selezione:
+se comune e' inserito cosi' come e'
+se e' provincia viene convertita nella sua sigla
+se e' regione deve essere esplosa nella sue province convertite
+queste condizioni sono codificate nel modulo constants
+@param t:[key,key] le chiavi possono essere 'cap,'pro','com','reg', il primo campo specifica se item deve essere convertito nella sua sigla, il secondo se va espanso 
+\end{DoxyVerb}
+ \hypertarget{classmmasgis_1_1lista_1_1Lista_aa9d4cdb5f8c4c5da737774b2a96598c8}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!cleanList@{cleanList}}
+\index{cleanList@{cleanList}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{cleanList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::lista::Lista::cleanList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1lista_1_1Lista_aa9d4cdb5f8c4c5da737774b2a96598c8}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_a5d059475387a8d86895fc605a6e98ff1}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!getList@{getList}}
+\index{getList@{getList}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{getList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::lista::Lista::getList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1lista_1_1Lista_a5d059475387a8d86895fc605a6e98ff1}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_a56e67d969de16fa52cbb70c9c9345009}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!resetList@{resetList}}
+\index{resetList@{resetList}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{resetList}]{\setlength{\rightskip}{0pt plus 5cm}def mmasgis::lista::Lista::resetList (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classmmasgis_1_1lista_1_1Lista_a56e67d969de16fa52cbb70c9c9345009}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_a869b7f0467c41bf56bf0434d2fab7256}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!cons@{cons}}
+\index{cons@{cons}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{cons}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::lista::Lista::cons}}}
+\label{classmmasgis_1_1lista_1_1Lista_a869b7f0467c41bf56bf0434d2fab7256}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_a487c2fb94a024e6a85d93c4dd9697c3d}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!lista@{lista}}
+\index{lista@{lista}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{lista}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::lista::Lista::lista}}}
+\label{classmmasgis_1_1lista_1_1Lista_a487c2fb94a024e6a85d93c4dd9697c3d}
+\hypertarget{classmmasgis_1_1lista_1_1Lista_a6debfb85e47d9b1a303d11f0ee0f9c9a}{
+\index{mmasgis::lista::Lista@{mmasgis::lista::Lista}!util@{util}}
+\index{util@{util}!mmasgis::lista::Lista@{mmasgis::lista::Lista}}
+\subsubsection[{util}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mmasgis::lista::Lista::util}}}
+\label{classmmasgis_1_1lista_1_1Lista_a6debfb85e47d9b1a303d11f0ee0f9c9a}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lista_8py}{lista.py}\end{DoxyCompactItemize}
